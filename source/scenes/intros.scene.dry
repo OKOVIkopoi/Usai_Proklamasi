@@ -1,0 +1,174 @@
+title: Intros
+new-page: true
+go-to: intro_menu
+face-image: img/ blank
+audio: shuffle music/ blank not yet
+
+= The Revolution of August 1945
+
+On Friday, 17 August, 1945, there is happened a proclamation. The proclamation which stated Indonesia's independent and that matters concerning the 'transfer of power' and 'other' matters will be executed in an 'orderly' manner and in the 'shortest' possible time.
+
+Anyway the news of it spreads quick and broad yet most of the people don't believe it nor the International community, thus the road towards actual liberation and recognition is still long.
+
+It seems that for now, anything is possible. The Japanese force has been *diminished*. A new order is ready to be built.
+
+@intro_menu
+
+- @leftover_from_Japan
+- @omg_dutch
+- @PerangKemerdekaan_government
+- @order_number_1
+- @what_now
+
+
+@leftover_from_Japan
+title: What's Left from Japan
+view-if: abdi_seen < n_players
+go-to: intro_menu
+on-arrival: abdi_seen += 1
+
+= I just want to A-
+
+The W I P.
+
+Nowwip.
+
+@omg_dutch
+title: The Dutch is Coming
+view-if: och_seen < n_players
+go-to: intro_menu
+on-arrival: och_seen += 1
+
+= The What now?!?
+
+ughh.
+
+WIP WIP WIP.
+
+
+@order_number_1
+title: First doing
+view-if: o1_seen < n_players
+go-to: o1_go if player_party = "Masyumi" or o1_go if player_party = "PNI" or o1_go if player_party = "Paras"; o1_Think if player_party = "PPKI";o1_HI if player_party = "PKI"
+on-arrival: o1_seen = 1
+
+= What will be our first action?
+
+We must do something, right..?
+
+@o1_go
+go-to: o1_go_menu
+
+# Source for Order Numb- BLABLABLA.
+
+blank, WIP yep.
+
+Let's begin.
+
+@o1_go_menu
+
+- @o1_committees: WIP.
+- @o1_address: also WIP.
+- @o1_rights: WIP too.
+- @o1_issue: This should be enough; issue the do!
+
+
+@o1_committees
+go-to: o1_go_menu
+max-visits: 1
+on-arrival: o1_points += 1; o1_committees = 1; soldier_unrest -= 4;
+
+We.. WIP.
+
+@o1_address
+go-to: o1_go_menu
+max-visits: 1
+on-arrival: o1_points += 1; o1_address = 1; soldier_unrest -= 4;
+
+We- WIP.
+
+@o1_rights
+go-to: o1_go_menu
+max-visits: 1
+on-arrival: o1_points += 1; o1_rights = 1; soldier_unrest -= 4;
+
+We wi WIP.
+
+@o1_issue
+view-if: o1_points > 0
+max-visits: 1
+go-to: intro_menu
+on-arrival: army_discipline -= 0.15 if o1_points = 3; army_discipline -= 0.1 if o1_points < 3; army_morale += 0.05 if o1_points = 3; army_morale += 0.3 if o1_points < 3; soldiers_pro_prov_gov += 10*o1_points; soldiers_pro_soviet += 10*o1_points; aparty_ap2_relation -= 2*o1_points; aparty_ap3_relation -= 2*o1_points;
+
+In addition to thes- WIP.
+
+The, WIP yes you guessed right.  [? if o1_points = 3: Bro. ?][? if o1_points < 3: Bvo. ?]
+
+
+@o1_HI
+go-to: intro_menu
+on-arrival: army_discipline -= 0.15; army_morale += 0.05; order_number_1 = 1; o1_points = 3; soldiers_pro_prov_gov += 10*o1_points; soldiers_pro_soviet += 10*o1_points; aparty_ap2_relation -= 2*o1_points; aparty_ap3_relation -= 2*o1_points;
+
+In respon... WIP.
+
+The Communists, WIP.
+
+@o1_Think
+go-to: intro_menu
+on-arrival: army_discipline -= 0.15; army_morale += 0.05; order_number_1 = 1; o1_points = 3; soldiers_pro_prov_gov += 10*o1_points; soldiers_pro_soviet += 10*o1_points; aparty_ap2_relation -= 2*o1_points; aparty_ap3_relation -= 2*o1_points;
+
+beep bop.
+
+beeep WIP.
+
+
+@PerangKemerdekaan_government
+title: A Government
+view-if: pg_seen < n_players
+go-to: pg_mas if player_party = "Masyumi"; pg_ppki if player_party = "PPKI"; pg_paras if player_party = "Paras"; pg_pki if player_party = "PKI"
+on-arrival: pg_seen += 1
+
+= The New Government
+
+WIP just.
+
+Just WIP.
+
+@pg_mas
+go-to: dual_gov
+
+The WIP.
+
+@pg_ppki
+go-to: dual_gov
+
+The WIP.
+
+@pg_paras
+go-to: dual_gov
+
+The WIP.
+
+@pg_pki
+go-to: dual_gov
+
+The WIP.
+
+@dual_gov
+go-to: intro_menu
+
+
+@what_now
+title: What now?
+go-to: 1945_main
+view-if: o1_seen = 1
+#view-if: o1_seen = 1 and ps_seen = 1 and abdi_seen = 1 and pg_seen = 1
+
+
+@1945_main
+new-page: true
+go-to: main if difficulty = 0; main.main_easy if difficulty < 0; main.main_hard if difficulty > 0
+
+= Week 3, August 1945
+
+Th- WIPP.
