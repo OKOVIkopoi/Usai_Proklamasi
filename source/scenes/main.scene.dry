@@ -1,0 +1,134 @@
+title: Next month
+set-bg: img/ blank
+is-hand: true
+on-arrival: {!
+if (Q.advisor_action_timer <= 0) {
+    Q.pinnedCardsDescription = 'Advisors - an action is available.';
+} else if (Q.advisor_action_timer == 1) {
+    Q.pinnedCardsDescription = 'Advisors - next action available in 1 week.';
+} else {
+    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' weeks.';
+}
+!}
+max-cards: 4
+
+#[? if historical_event : [+ historical_event +] ?]
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+
+
+- @party_Masyumi
+- @party_PPKI
+- @party_PNI
+- @party_Paras
+- @party_PKI
+- @PerangKemerdekaan_gov
+- @KNIP_affairs
+- #advisor
+- @sr_shuffle_leadership_pinned
+- @m_shuffle_leadership_pinned
+
+@main_easy
+set-bg: img/ blank
+is-hand: true
+on-arrival: {!
+if (Q.advisor_action_timer <= 0) {
+    Q.pinnedCardsDescription = 'Advisors - an action is available.';
+} else if (Q.advisor_action_timer == 1) {
+    Q.pinnedCardsDescription = 'Advisors - next action available in 1 week.';
+} else {
+    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' weeks.';
+}
+!}
+max-cards: 5
+
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+
+- @party_Masyumi
+- @party_PPKI
+- @party_PNI
+- @party_Paras
+- @party_PKI
+- @PerangKemerdekaan_gov
+- @KNIP_affairs
+- #advisor
+
+
+@main_hard
+set-bg: img/ blank
+is-hand: true
+on-arrival: {!
+if (Q.advisor_action_timer <= 0) {
+    Q.pinnedCardsDescription = 'Advisors - an action is available.';
+} else if (Q.advisor_action_timer == 1) {
+    Q.pinnedCardsDescription = 'Advisors - next action available in 1 week.';
+} else {
+    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' weeks.';
+}
+!}
+max-cards: 3
+
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+
+- @party_Masyumi
+- @party_PPKI
+- @party_PNI
+- @party_Paras
+- @party_PKI
+- @PerangKemerdekaan_gov
+- @KNIP_affairs
+- #advisor
+
+
+@party_Masyumi
+title: Party Affairs
+card-image: img/ blank
+is-deck: true
+view-if: player_party = "Masyumi"
+
+- #Masyumi_party
+
+@party_PPKI
+title: Party Affairs
+card-image: img/ blank
+is-deck: true
+view-if: player_party = "PPKI"
+
+- #PPKI_party
+
+@party_PNI
+title: Party Affairs
+card-image: img/ blank
+is-deck: true
+view-if: player_party = "PNI"
+
+- #PNI_party
+
+@party_Paras
+title: Party Affairs
+card-image: img/ blank
+is-deck: true
+view-if: player_party = "Paras"
+
+- #Paras_party
+
+@party_PKI
+title: Party Affairs
+card-image: img/ blank
+is-deck: true
+view-if: player_party = "PKI"
+
+@PerangKemerdekaan_gov
+title: Provisional Government
+view-if: player_party = "uhh" or (player_party = "uhh" and uh_in_PerangKemerdekaan_gov) or (player_party = "uhh" and uh_in_PerangKemerdekaan_gov) or (player_party = "uhh" and uh_in_PerangKemerdekaan_gov)
+card-image: img/ blank
+is-deck: true
+
+- #PerangKemerdekaan_gov
+
+@KNIP_affairs
+title: Central Indonesian National Committee
+view-if: player_party == "Masyumi" or player_party == "PPKI" or player_party == "PNI" or player_party == "Paras" or player_party == "PKI"
+card-image: img/ blank
+is-deck: true
+
+- #KNIP_woho
