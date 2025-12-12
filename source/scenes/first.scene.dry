@@ -35,7 +35,7 @@ Q.month_actions = 0;
 // 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;
 Q.historical_mode = 0;
-Q.player_party_name = "Sp";
+Q.player_party_name = "Majelis Syuro Muslimin Indonesia";
 Q.player_party = "Masyumi";
 Q.party_name_map = {"Masyumi": "Majelis Syuro Muslimin Indonesia",
         "PPKI": "Persatuan Politik Katolik Indonesia",
