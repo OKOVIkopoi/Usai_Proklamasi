@@ -1045,7 +1045,7 @@ Q.kollontai_advisor = 0; // Alexandra Kollontai - April week 1
 Q.trotsky_advisor = 0;
 
 !}
-set-bg: img/map_2.jpg
+set-bg: img/East_Indies_t1928_(1_of_2).jpg
 new-page: true
 
 
