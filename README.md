@@ -19,3 +19,5 @@ To update dendrynexus in `package-lock.json`, run `npm install --upgrade https:/
 ## Commentary and other things the Modder wanna tell
 
 This mod is still being work on, so yeah you shouldn't play it NOW. I advise you to wait till I announce the Mod is finally finished (v1.0) or this Readme is updated to inform that.
+
+Current mode: Modder is at rest or just offline.
