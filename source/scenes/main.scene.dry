@@ -24,8 +24,8 @@ max-cards: 4
 - @PerangKemerdekaan_gov
 - @KNIP_affairs
 - #advisor
-- @sr_shuffle_leadership_pinned
-- @m_shuffle_leadership_pinned
+- @Masyumi_shuffle_leadership_pinned
+- @PNI_shuffle_leadership_pinned
 
 @main_easy
 set-bg: img/East_Indies_t1928_(1_of_2).jpg
@@ -51,7 +51,8 @@ max-cards: 5
 - @PerangKemerdekaan_gov
 - @KNIP_affairs
 - #advisor
-
+- @Masyumi_shuffle_leadership_pinned
+- @PNI_shuffle_leadership_pinned
 
 @main_hard
 set-bg: img/East_Indies_t1928_(1_of_2).jpg
