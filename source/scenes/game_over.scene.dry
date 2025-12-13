@@ -4,8 +4,14 @@ go-to: eg_menu
 
 = End
 
+@achievements
+title: Achievements
+tags: endings
+go-to: eg_menu if started == 1; first.start_menu_2 if started == 0
+
 @eg_menu
 
+- #endings
 - @end_game: End game.
 
 @end_game
