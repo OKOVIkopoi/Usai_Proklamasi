@@ -41,7 +41,7 @@ Q.party_name_map = {"Masyumi": "Majelis Syuro Muslimin Indonesia",
         "PPKI": "Persatuan Politik Katolik Indonesia",
         "PNI": "Partai Nasional Indonesia",
         "Paras": "Partai Rakyat Sosialis",
-        "PKI": "Partai Komunis Indonesia};
+        "PKI": "Partai Komunis Indonesia"};
 
 Q.Masyumi_is_player = 1;
 Q.PPKI_is_player = 0;
@@ -119,7 +119,7 @@ Q.PKI_dissent_percent = 4;
 // Masyumi internals
 // leadership: 1 = Reformists, 2 = Moderate Practitioners, 3 = Conservative WIPs, 4 = Revolutionary Syariatists
 Q.Masyumi_leadership = 3;
-Q.Masyumi_factions = ['reformist', 'moderate', 'conservative', 'revolutionary right'];
+Q.Masyumi_factions = ['reformist', 'moderate', 'conservative', 'revolutionary_right'];
 Q.reformist_strength = 10;
 Q.reformist_dissent = 10;
 Q.moderate_strength = 60;
@@ -129,7 +129,7 @@ Q.conservative_dissent = 0;
 Q.reformist_split = 0;
 Q.moderate_split = 0;
 Q.conservative_split = 0;
-Q.revolutionary right_split = 0;
+Q.revolutionary_right_split = 0;
 // WIP can split uh WIP
 Q.Masyumi_war_policy = 2;
 Q.Masyumi_industrial_policy = 1;
@@ -411,7 +411,7 @@ if (Q.soldier_hunger < 0) {
 ////////////////////// Current government
 // party names, hm yeah those
 // governments don't necessarily have to be the whatever government right now
-Q.Masyumi_in_gov = p;
+Q.Masyumi_in_gov = 0;
 Q.PPKI_in_gov = 0;
 Q.PNI_in_gov = 1;
 Q.Paras_in_gov = 0;
@@ -427,7 +427,7 @@ Q.democrats_in_gov = 0;
 Q.in_all_socialist_coalition = 0;
 
 Q.president = "supposedly Sukarno";
-Q.prime_minister_party = "Independent/PNI"
+Q.prime_minister_party = "Independent/PNI";
 Q.agriculture_minister = "WIP and so down this";
 Q.agriculture_minister_party = "Independent";
 Q.justice_minister = "Kerensky";
@@ -925,9 +925,9 @@ Q.timers = [//Masyumi_party
             'Paras_international', 'Paras_war_policy', 'Paras_industrial_policy',
             //PKI_party
             'PKI_enemies', 'PKI_fundraising', 'PKI_ideology',
-            'PKI_inter_party_relationships', 'PKI_media'
+            'PKI_inter_party_relationships', 'PKI_media',
             'PKI_international', 'PKI_war_policy',
-            'PKI_reunify' 'PKI_party_unity', 'PKI_shuffle_leadership',
+            'PKI_reunify', 'PKI_party_unity', 'PKI_shuffle_leadership',
             'PKI_organizing', 'PKI_paramilitary',
             // prov_gov
             'agricultural_policy', 'food_policy', 'fiscal_policy',
@@ -966,7 +966,7 @@ Q.high_inflation_timer = 2;
 Q.land_seizures_timer = 4;
 Q.military_disorder_timer = 3;
 Q.crime_wave_timer = 5;
-Q.enemy_reinforcements_timer = 0
+Q.enemy_reinforcements_timer = 0;
 
 // House of Representatives election
 Q.election_type = "ca";
