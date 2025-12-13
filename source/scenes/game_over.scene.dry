@@ -1,0 +1,12 @@
+title: Game Over.
+new-page: true
+go-to: eg_menu
+
+= End
+
+@eg_menu
+
+- @end_game: End game.
+
+@end_game
+game-over: true
