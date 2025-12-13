@@ -20,7 +20,7 @@ go-to: start_menu_2
 
 
 @start
-on-arrival:
+on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
@@ -1043,6 +1043,7 @@ Q.zinoviev_advisor = 0; // Grigory Zinoviev - April week 1
 Q.sverdlov_advisor = 0; // Yakov Sverdlov - April week 1
 Q.kollontai_advisor = 0; // Alexandra Kollontai - April week 1
 Q.trotsky_advisor = 0;
+!}
 
 set-bg: img/East_Indies_t1928_(1_of_2).jpg
 new-page: true
