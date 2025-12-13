@@ -1142,7 +1142,7 @@ title: Indonesian Catholic Political Union (PPKI)
 - @party_selection: No, select a different party.
 
 @PPKI_2
-on-arrival: player_party = "Persatuan Politik Katolik Indonesia"; player_party_name = "PPKI"; PPKI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 1; player_in_exco = 0; player_in_gov = 0;
+on-arrival: player_party_name = "Persatuan Politik Katolik Indonesia"; player_party = "PPKI"; PPKI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
 go-to: intros
 
 
@@ -1155,5 +1155,17 @@ title: Indonesian National Party (PNI)
 - @party_selection: No, select a different party.
 
 @PNI_2
-on-arrival: player_party = "Partai Nasional Indonesia"; player_party_name = "PNI"; PNI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_gov = 1; player_in_exco = 0;
+on-arrival: player_party_name = "Partai Nasional Indonesia"; player_party = "PNI"; PNI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_gov = 1; player_in_exco = 0;
+go-to: intros
+
+@Paras
+title: Socialist People's Party (Paras)
+
+**Paras** - Weeeeip.
+
+- @Paras_2: Yes, I am a socialist!
+- @party_selection: No, select a different party.
+
+@Paras_2
+on-arrival: player_party = "Partai Rakyat Sosialis"; player_party_name = "Partai Rakyat Sosialis"; Paras_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
 go-to: intros
