@@ -1,0 +1,20 @@
+title: library
+new-page: true
+is-special: true
+go-to: menu
+
+= Library
+
+Herein contains relevant information about revolutionary Russia in 1917.
+
+@menu
+
+- @government: Right-now Government
+- @KNIP_: Legislative body when?
+- @demographics: Demographics
+- @parties: Parties
+- @economy: Economics
+- @paramilitaries: The Fighting Forces on The Streets
+- @factions: Internal Factions
+- @timeline: Timeline of recent Indonesian history
+- @backSpecialScene: Exit library.
