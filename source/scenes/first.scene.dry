@@ -997,10 +997,8 @@ Q.martov_advisor = 0; // Julius Martov - arrive April week 4
 Q.axelrod_advisor = 0; // Pavel Axelrod
 Q.sukhanov_advisor = 1; // Nikolai Sukhanov
 
-Q.sukhanov_available = 1;
 
-
-// sr advisors
+// PPKI advisors
 // right-sr
 Q.avksentiev_advisor = 0; // Nikolai Avksentiev
 Q.savinkov_advisor = 0; // Boris Savinkov
@@ -1018,7 +1016,7 @@ Q.kamkov_advisor = 0; // Boris Kamkov
 Q.kerensky_advisor = 1;
 
 
-// kadet advisors
+// PNI advisors
 // right-kadet
 Q.milyukov_advisor = 1; // Pavel Milyukov
 Q.panina_advisor = 1; // Sofia Panina
@@ -1032,6 +1030,7 @@ Q.tereshchenko_advisor = 1; // Mikhail Tereshchenko
 // Kadet-aligned conservatives
 Q.rodzianko_advisor = 0; // Mikhail Rodzianko
 
+// Paras advisors
 
 // PKI advisors
 Q.stasova_advisor = 1; // Aidit
@@ -1040,7 +1039,9 @@ Q.lenin_advisor = 0; // Vladimir Lenin - April week 1
 
 // Records of stats
 Q.KNIP_support_records = [];
-Q.economic_records = []; !}
+Q.economic_records = []; 
+
+!}
 set-bg: img/East_Indies_t1928_(1_of_2).jpg
 new-page: true
 
