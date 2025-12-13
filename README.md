@@ -1,5 +1,5 @@
 # Usai Proklamasi: Same or Different
-A (still under work) Mod of Autumn Chen/aucchen's [Petrogad 1917 game](https://github.com/aucchen/petrograd_1917) where you can play as any available party at the time of 1945, technically there's none which is why I'm working to put a spectator one that basicly lets you watch History as is until 'enough' parties spawn to be chosen by you or.. continue spectate.
+A (still under work) Mod of Autumn Chen/aucchen's [Social Democracy: Petrogad 1917](https://github.com/aucchen/petrograd_1917) game where you can play as any available party at the time of 1945, technically there's none which is why I'm working to put a spectator one that basicly lets you watch History as is until 'enough' parties spawn to be chosen by you or.. continue spectate.
 ## Included Libraries
 
 [jquery v1.11.1](https://releases.jquery.com/)
