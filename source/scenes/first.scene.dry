@@ -1040,8 +1040,7 @@ Q.lenin_advisor = 0; // Vladimir Lenin - April week 1
 
 // Records of stats
 Q.KNIP_support_records = [];
-Q.economic_records = [];
-!}
+Q.economic_records = []; !}
 set-bg: img/East_Indies_t1928_(1_of_2).jpg
 new-page: true
 
