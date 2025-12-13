@@ -1,5 +1,5 @@
 title: Next month
-set-bg: img/ blank
+set-bg: img/East_Indies_t1928_(1_of_2).jpg
 is-hand: true
 on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
@@ -28,7 +28,7 @@ max-cards: 4
 - @m_shuffle_leadership_pinned
 
 @main_easy
-set-bg: img/ blank
+set-bg: img/East_Indies_t1928_(1_of_2).jpg
 is-hand: true
 on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
@@ -54,7 +54,7 @@ max-cards: 5
 
 
 @main_hard
-set-bg: img/ blank
+set-bg: img/East_Indies_t1928_(1_of_2).jpg
 is-hand: true
 on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
