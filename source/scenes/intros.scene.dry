@@ -125,7 +125,7 @@ beeep WIP.
 @PerangKemerdekaan_government
 title: A Government
 view-if: pg_seen < n_players
-go-to: pg_mas if player_party = "Masyumi"; pg_ppki if player_party = "PPKI"; pg_paras if player_party = "Paras"; pg_pki if player_party = "PKI"
+go-to: pg_Masyumi if player_party = "Masyumi"; pg_PPKI if player_party = "PPKI"; pg_PNI if player_party= "PNI"; pg_Paras if player_party = "Paras"; pg_PKI if player_party = "PKI"
 on-arrival: pg_seen += 1
 
 = The New Government
@@ -134,22 +134,27 @@ WIP just.
 
 Just WIP.
 
-@pg_mas
+@pg_Masyumi
 go-to: dual_gov
 
 The WIP.
 
-@pg_ppki
+@pg_PPKI
 go-to: dual_gov
 
 The WIP.
 
-@pg_paras
+@pg_PNI
 go-to: dual_gov
 
 The WIP.
 
-@pg_pki
+@pg_Paras
+go-to: dual_gov
+
+The WIP.
+
+@pg_PKI
 go-to: dual_gov
 
 The WIP.
@@ -157,12 +162,13 @@ The WIP.
 @dual_gov
 go-to: intro_menu
 
+hmmmmm, I'm literally working what's work first.
 
 @what_now
 title: What now?
 go-to: 1945_main
 view-if: o1_seen = 1
-#view-if: o1_seen = 1 and ps_seen = 1 and abdi_seen = 1 and pg_seen = 1
+#view-if: o1_seen = 1 and pg_seen= 1 and abdi_seen = 1 and pg_seen = 1
 
 
 @1945_main
