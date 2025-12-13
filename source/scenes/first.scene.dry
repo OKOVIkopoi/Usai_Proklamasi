@@ -1033,18 +1033,16 @@ Q.tereshchenko_advisor = 1; // Mikhail Tereshchenko
 Q.rodzianko_advisor = 0; // Mikhail Rodzianko
 
 
-// bolshevik advisors
-Q.stasova_advisor = 1; // Elena Stasova
-Q.shliapnikov_advisor = 1; // Alexander Shliapnikov
+// PKI advisors
+Q.stasova_advisor = 1; // Aidit
+Q.shliapnikov_advisor = 1; // hmm
 Q.lenin_advisor = 0; // Vladimir Lenin - April week 1
-Q.stalin_advisor = 0; // Josef Stalin - April week 1
-Q.kamenev_advisor = 0; // Lev Kamenev - April week 1
-Q.zinoviev_advisor = 0; // Grigory Zinoviev - April week 1
-Q.sverdlov_advisor = 0; // Yakov Sverdlov - April week 1
-Q.kollontai_advisor = 0; // Alexandra Kollontai - April week 1
-Q.trotsky_advisor = 0;
-!}
 
+// Records of stats
+Q.KNIP_support_records = [];
+Q.economic_records = [];
+
+!}
 set-bg: img/East_Indies_t1928_(1_of_2).jpg
 new-page: true
 
