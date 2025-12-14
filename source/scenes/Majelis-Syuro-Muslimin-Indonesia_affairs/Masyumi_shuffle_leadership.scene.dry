@@ -1,0 +1,49 @@
+title: Shuffle Leadership
+new-page: true
+view-if: Masyumi_shuffle_leadership_timer <= 0 and Masyumi_exile_return_seen = 1 and player_party = "Masyumi" and difficulty > 0
+on-arrival: Masyumi_shuffle_leadership_timer += 4; week_actions += 1 if difficulty > 0
+frequency: 100
+is-card: true
+card-image: img/ blank
+tags: Masyumi_party
+
+= Shuffle Leadership
+
+changing the leadership of the party might be necessary to adapt to the changing circumstances, perhaps not. Go on.
+
+Removing advisors will increase dissent from their faction of the party, while selecting advisors will increase a faction's strength.
+
+- @RM_main: Remove advisors.
+- @add_advisors: Add advisors.
+- @first: Don't change the party leadership.
+- @easy_discard
+
+@RM_main
+title: Remove advisors.
+tags: Masyumi_nonfactional
+frequency: 1
+
+- #Masyumi_RM_advisor
+- @add_advisors: Add advisors.
+
+@remove_none
+title: Stop changing advisors.
+go-to: first
+tags: Masyumi_RM_advisor
+
+
+@add_advisors
+title: Add advisors
+unavailable-subtitle: Maximum of [+ max_advisors +] advisors.
+choose-if: Masyumi_n_advisors < max_advisors
+go-to: advisor_menu
+
+@advisor_menu
+title: Add other advisors.
+tags: Masyumi_nonfactional
+frequency: 1
+
+- @RM_main: Remove advisors instead.
+- @remove_none: Stop changing advisors.
+
+#################################### removing advisors
