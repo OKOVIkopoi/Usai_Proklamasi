@@ -1,7 +1,0 @@
-title: Shuffle Leadership
-view-if: difficulty <= 0 and player_party = "Masyumi"
-new-page: true
-is-card: true
-is-pinned-card: true
-card-image: img/ blank
-go-to: Masyumi_shuffle_leadership.RM_main
