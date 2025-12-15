@@ -2,7 +2,7 @@ title: Shuffle Cabinet
 new-page: true
 is-card: true
 on-arrival: shuffle_cabinet_timer += 3; week_actions += 1
-view-if: shuffle_cabinet_timer = 0 and ((player_party == "PNI" and PNI_in_gov) or (player_party == "Masyumi" and Masyumi_in_gov)
+view-if: shuffle_cabinet_timer = 0 and ((player_party == "PNI" and PNI_in_gov = 1) or (player_party == "Masyumi" and Masyumi_in_gov = 1)
 card-image: img/ blank
 
 
