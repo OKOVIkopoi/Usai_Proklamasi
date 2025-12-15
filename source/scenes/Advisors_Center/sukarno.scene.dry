@@ -1,0 +1,25 @@
+title: Sukarno
+is-pinned-card: true
+tags: advisor
+card-image: img/portraits/ blank
+view-if: sukarno_advisor = 1 and player_party = "PNI"
+new-page: true 
+
+= Sukarno
+
+Sukarno is one of the leading figures in the struggle of Indonesian independence, he personally is good in speeching and other things that will make him likeable by the people *for now*. Don't forget that he is the proclamator-one who on behalf of Indonesia declared that it's free and sovereign.
+
+# actions: WIP, yeah it's WIP.
+
+- @a_call_for_unity
+- @first: Return to main
+
+
+@a_call_for_unity
+title: Unite Everything
+subtitle: Unite both the Country, people, and his Party or followers under one common goal.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] weeks before next advisor action. ?]
+choose-if: advisor_action_timer <= 0
+on-arrival: advisor_action_timer = 4;
+
+He's just that powerful, just like in Real Life except... WIP/Spoiler.
