@@ -1,6 +1,6 @@
 title: Just Testing
 subtitle: Dismiss thsi, useless next...
-view-if: ((player_party = "PNI") or (player_party = "PKI"))
+view-if: (player_party = "PNI" or player_party = "PKI")
 new-page: true
 on-arrival: meowo_seen += 1;
 go-to: week1 if meowo_seen = 1;
