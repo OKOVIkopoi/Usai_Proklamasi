@@ -3,7 +3,6 @@ subtitle: Dismiss this, useless next...
 view-if:  (player_party = "PNI")
 new-page: true
 on-arrival: meowo_seen += 1;
-go-to: week1 if meowo_seen = 1;
 max-visits: 1
 tags: event
 
@@ -11,9 +10,4 @@ tags: event
 
 = Test, TEst, TESt, TEST, WIP.
 
-@week1
-on-arrival: budget += 5;
-
-The Provisional Government has had a busy day of policy-making. It has- WIP.
-
-Meow.
+@return
