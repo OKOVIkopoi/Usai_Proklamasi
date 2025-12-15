@@ -94,13 +94,13 @@ for (var p of Q.parties) {
 // should we normalize militia/defense force support levels? Or should they be treated like demographic supports? Normalizing would make support changes more dramatic.
 // Normalize them, so that they're dramatic.
 var total_workers_militia_loyalty = Q.workers_militia_independent;
-for (var p of Q.party_members_loyalty) {
-    total_party_members_loyalty += Q['party_' + p + '_loyalty'];
+for (var p of Q.workers_militia_parties) {
+    total_workers_militia_loyalty += Q['workers_militia_' + p + '_loyalty'];
 }
-for (var p of Q.party_members_loyalty) {
-    Q['party_' + p + '_loyalty'] = 100*Q['total_party_' + p + '_loyalty']/'total_party_' + p + '_loyalty';
+for (var p of Q.workers_militia_parties) {
+    Q['workers_militia_' + p + '_loyalty'] = 100*Q['workers_militia_' + p + '_loyalty']/total_workers_militia_loyalty;
 }
-Q[party_members_independent] = 100*Q['party_' + p + '_independent_members]/['total_party' + p + '_loyalty'];
+Q.workers_militia_independent = 100*Q.workers_militia_independent/total_workers_militia_loyalty;
 // normalize city militia loyalty
 var total_city_militia_loyalty = Q.city_militia_independent;
 for (var p of Q.city_militia_parties) {
