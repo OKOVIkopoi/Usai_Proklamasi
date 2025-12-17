@@ -1,0 +1,26 @@
+title: International Relations
+new-page: true
+view-if: PPKI_ideology_timer <= 0 and player_party= "PPKI"
+on-arrival: PPKI_ideology_timer += 1; week_actions += 1
+frequency: 100
+is-card: true
+card-image: img/ blank
+tags: PPKI_pol
+
+= International Relations
+
+We haven't been that known internationally, not that it's bad-it looks like we are too centered in the national stage.
+
+So do we want to begin forming relationship with the International community?
+
+- @Improve_Vatican
+- @first: No, just no.
+- @easy_discard
+
+@Improve_Vatican
+title: Improve our relations with the Holy See and Pope instead
+on-arrival: k_resources -= 1;
+choose-if: k_resources >= 1
+subtitle: -1 resource
+
+Right.. of course!
