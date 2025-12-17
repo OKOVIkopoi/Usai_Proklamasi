@@ -6,5 +6,5 @@ view-if: shuffle_cabinet_timer = 0 and ((player_party == "k" and k_in_gov and pr
 card-image: img/prov_gov_1.jpg
 tags:PerangKemerdekaan_gov
 
-@first = We do not need to shuffle the cabinet.
+@first: We do not need to shuffle the cabinet.
 on-arrival: week_actions -= 1
