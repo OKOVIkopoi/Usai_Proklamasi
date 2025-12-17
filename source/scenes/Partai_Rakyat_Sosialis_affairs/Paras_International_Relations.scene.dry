@@ -1,0 +1,15 @@
+title: International Relations
+new-page: true
+view-if: Paras_International-R_timer <= 0 and player_party= "Paras"
+on-arrival: Paras_International-R_timer += 1; week_actions += 1
+frequency: 100
+is-card: true
+card-image: img/ blank
+tags: Paras_party
+
+= International Relations
+
+WIP though- W I P.
+
+- @first: Bruh.
+- @easy_discard
