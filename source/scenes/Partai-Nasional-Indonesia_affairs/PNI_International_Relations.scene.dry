@@ -1,0 +1,15 @@
+title: International Relations
+new-page: true
+view-if: PNI_International-R_timer <= 0 and player_party= "PNI"
+on-arrival: PNI_International-R_timer += 1; week_actions += 1
+frequency: 100
+is-card: true
+card-image: img/ blank
+tags: PNI_party
+
+= International Relations
+
+WIP...
+
+- @first: Bruh.
+- @easy_discard
