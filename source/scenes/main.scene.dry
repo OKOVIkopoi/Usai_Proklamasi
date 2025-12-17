@@ -94,7 +94,7 @@ card-image: img/ blank
 is-deck: true
 view-if: player_party = "PPKI"
 
-- #PPKI_party
+- #PPKI_pol
 
 @party_PNI
 title: Party Affairs
@@ -117,6 +117,8 @@ title: Party Affairs
 card-image: img/ blank
 is-deck: true
 view-if: player_party = "PKI"
+
+- #PKI_party
 
 @PerangKemerdekaan_gov
 title: Provisional Government
