@@ -10,5 +10,10 @@ tags:PerangKemerdekaan_gov
 
 WIP, really. I just include the no option cause I do still there.
 
-- @first: We do not need to shuffle the cabinet.
+- @first 
+
+@first
+title: We do not need to shuffle the cabinet.
 on-arrival: week_actions -= 1
+
+Okie.
