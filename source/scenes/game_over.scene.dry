@@ -4,7 +4,7 @@ go-to: eg_menu
 on-arrival: {!
 // Achievements:
 this.achieve('game_completed');
-if (Q.player_party != 'Masyumi' or != 'PPKI' or != 'PNI' or != 'Paras' or != 'PKI') {this.achieve('TestwipOKO');}
+if (Q.player_party != 'Masyumi' or Q.player_party != 'PPKI' or Q.player_party != 'PNI' or Q.player_party != 'Paras' or Q.player_party != 'PKI') {this.achieve('TestwipOKO');}
 !}
 
 = End
