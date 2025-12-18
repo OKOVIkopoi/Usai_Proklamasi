@@ -11,7 +11,7 @@ if (Q.player_party != 'Masyumi' or 'PPKI' or 'PNI' or 'Paras' or 'PKI') {(this.a
 
 @eg_menu
 
-- @end_game:End Gang
+- @end_game:End Gang eughr I mean GAME
 
 @achievements
 title: Achievements
@@ -22,7 +22,6 @@ go-to: eg_menu if started == 1; first.start_menu_2 if started == 0
 
 
 [? if game_achievement_TestwipOKO : **Blablabla.. (WIP)** - You've got the first ever achievement I made somehow. ?]
-@eg_menu
 
 = Completed Achievements Overall
 
