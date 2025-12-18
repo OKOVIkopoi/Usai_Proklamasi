@@ -1,18 +1,36 @@
 title: Game Over.
 new-page: true
 go-to: eg_menu
+on-arrival: {!
+// Achievements:
+this.achieve('game_completed');
+if (Q.player_party != 'Masyumi' or 'PPKI' or 'PNI' or 'Paras' or 'PKI') {(this.achieve('TestwipOKO');)}
+!}
 
 = End
+
+@eg_menu
+
+- @end_game:End Gang
 
 @achievements
 title: Achievements
 tags: endings
 go-to: eg_menu if started == 1; first.start_menu_2 if started == 0
 
+= Completed Achievements in this Playthrough
+
+
+[? if game_achievement_TestwipOKO : **Blablabla.. (WIP)** - You've got the first ever achievement I made somehow. ?]
 @eg_menu
 
-- #endings
-- @end_game: End game.
+= Completed Achievements Overall
+
+[? if achievement_TestwipOKO : **Blablabla.. (WIP)** - You've got the first ever achievement I made somehow. ?]
+
+= NOT Completed Achievements
+
+[? if not achievement_TestwipOKO : **Blablabla.. (WIP)** - You've got the first ever achievement I made somehow. ?]
 
 @end_game
 game-over: true
