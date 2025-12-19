@@ -1,2 +1,111 @@
 title: Election (WIP)
+on-arrival: {!
+// TODO: this is only for the 'national' election. States' will be different-I guess.
+// calculate normalized class voting amounts (0 to 100)
+
+for (var c of Q.classes) {
+    var class_votes = 0;
+    for (var party of Q.parties) {
+        if (party == "none") {
+            continue;
+        }
+        if (!Q[c+'_'+party] || Q[c+'_'+party] < 0) {
+            Q[c+'_'+party] = 0;
+        }
+        class_votes += Q[c+'_'+party];
+    }
+    for (var party of Q.parties) {
+        Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
+        Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
+    }
+}
+
+// 1. calculate support for each of the parties
+var total_support = 0;
+for (var party of Q.parties) {
+    if (party == "none" || party == "anarchist") {
+        continue;
+    }
+    var party_support = 0;
+    for (var c of Q.classes) {
+        party_support += Q[c]*Q[c+'_'+party+'_normalized'];
+    }
+    for (var c of Q.minorities) {
+        if (Q[c + '_' + party]) {
+            party_support += Q[c]*Q[c + '_' + party];
+        }
+    }
+    Q[party + '_support'] = party_support;
+    total_support += party_support;
+}
+// 2. normalize support (fraction)
+// 3. Round to integers
+// TODO: round to 1 decimal instead of rounding to integers
+// to do that, we multiply party_normalized*1000 and divide the rounded number by 10.
+for (var party of Q.parties) {
+    if (party == "none" || party == "anarchist") {
+        continue;
+    }
+    Q[party+'_assembly_normalized'] = Q[party + '_support']/total_support;
+    Q[party+'_assembly_votes_dec'] = Math.round(Q[party+'_assembly_normalized']*1000)/10;
+    Q[party+'_assembly_votes'] = Math.round(Q[party+'_assembly_normalized']*100);
+    //Q[party+'_votes'] = Q[party+'_votes_dec'];
+    // display
+    Q[party + '_assembly_votes_disp'] = Q[party+'_assembly_votes_dec'].toFixed(1);
+}
+!}
+go-to:jumpScene
+
+######################################### Petrograd City Duma
+@petrograd_duma
+title: Petrograd Duma Elections
+on-arrival: {!
+
+for (var c of Q.classes) {
+    var class_votes = 0;
+    for (var party of Q.parties) {
+    if (party == "none") {
+        continue;
+    }
+
+        if (!Q[c+'_'+party] || Q[c+'_'+party] < 0) {
+            Q[c+'_'+party] = 0;
+        }
+        class_votes += Q[c+'_'+party];
+    }
+    for (var party of Q.parties) {
+        Q[c + '_' + party + '_normalized'] = 100*Q[c+'_'+party]/class_votes;
+        Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
+    }
+}
+
+// 1. calculate support for each of the parties
+var total_support = 0;
+for (var party of Q.parties) {
+    if (party == "none" || party == "anarchist") {
+        continue;
+    }
+
+    var party_support = 0;
+    for (var c of Q.classes) {
+        party_support += Q[c + '_petrograd']*Q[c+'_'+party+'_normalized'];
+    }
+    Q[party + '_support'] = party_support;
+    total_support += party_support;
+}
+// 2. normalize support (fraction)
+// 3. Round to integers
+// TODO: round to 1 decimal instead of rounding to integers
+// to do that, we multiply party_normalized*1000 and divide the rounded number by 10.
+for (var party of Q.parties) {
+    if (party == "none" || party == "anarchist") {
+        continue;
+    }
+
+    Q[party+'_city_duma_normalized'] = Q[party + '_support']/total_support;
+    Q[party+'_city_duma_votes_dec'] = Math.round(Q[party+'_city_duma_normalized']*1000)/10;
+    Q[party+'_city_duma_votes'] = Math.round(Q[party+'_city_duma_normalized']*100);
+    Q[party + '_city_duma_votes_disp'] = Q[party+'_city_duma_votes_dec'].toFixed(1);
+}
+!}
 go-to:jumpScene
