@@ -1,15 +1,108 @@
 title: Election Simulation
 set-jump: post_election
 
-=10101010
+The country is just born, there's really no election previously. Well there is the colonial one but it's different, right? Anyhow here's the last- WIP
 
-The country just born, there's really no election previously. Well there is the colonial one but it's different, right? Anyhow here's the last- WIP
-
-- @1939_1: Volksraad (1939 Dutch East Indies Volksraad election)
+- @1939_1: Volksraad (1939 Dutch East Indies Volksraad election
+- @1917_1
 
 @1939_1
 
 = W I P
 
+go-to: election_algorithm
+set-jump: post_election
+
+@1917_1
+on-arrival: {!
+Q.election_type = "ca";
+Q.workers = 20; // 
+Q.middle = 8; //
+Q.peasants = 60; // 
+Q.soldiers = 8; //
+Q.underclass = 6;
+Q.elites = 2;
+
+Q.russians = 50;
+Q.ukrainians = 20;
+Q.jews = 4.5;
+Q.kyrgyz_kazakh = 3.4;
+Q.tatar = 3.4;
+Q.other_turkic = 3;
+Q.latvians = 1;
+Q.estonians = 1;
+Q.georgians = 1;
+Q.armenians = 1;
+Q.germans = 1;
+Q.others= 5;
+Q.chinese = 0.1;
+
+Q.classes = ['workers', 'middle', 'elites', 'peasants', 'soldiers', 'underclass'];
+Q.minorities = ['ukrainians', 'kyrgyz_kazakh', 'tatar', 'other_turkic', 'jews', 'latvians', 'estonians', 'georgians', 'armenians', 'others'];
+Q.parties = ['b', 'm', 'sr', 'k', 'popular_socialist', 'conservative', 'other', 'anarchist', 'none'];
+Q.minority_parties = ['ukrainian_sr', 'alash', 'musavat', 'dashnak', 'jewish_socialists', 'jewish_national_list', 'muslim_socialists', 'turkic_muslim_parties', 'cossacks'];
+
+// Support for party by social group
+// they don't have to sum to 100 since the electoral calculations will be normalized.
+Q.workers_b = 10;
+Q.workers_m = 50;
+Q.workers_sr = 30;
+Q.workers_k = 5;
+Q.workers_conservative = 2;
+Q.workers_popular_socialist = 5;
+Q.workers_anarchist = 5;
+Q.workers_other = 5;
+Q.workers_none = 10;
+
+Q.middle_b = 5;
+Q.middle_m = 10;
+Q.middle_sr = 10;
+Q.middle_k = 40;
+Q.middle_conservative = 10;
+Q.middle_popular_socialist = 10;
+Q.middle_anarchist = 1;
+Q.middle_other = 15;
+Q.middle_none = 5;
+
+Q.peasants_b = 5;
+Q.peasants_m = 5;
+Q.peasants_sr = 55;
+Q.peasants_k= 5;
+Q.peasants_conservative = 10;
+Q.peasants_popular_socialist = 10;
+Q.peasants_anarchist = 5;
+Q.peasants_other = 10;
+Q.peasants_none = 10;
+
+Q.underclass_b = 15;
+Q.underclass_m = 5;
+Q.underclass_sr = 15;
+Q.underclass_k = 0;
+Q.underclass_conservative = 0;
+Q.underclass_popular_socialist = 5;
+Q.underclass_anarchist = 15;
+Q.underclass_other = 5;
+Q.underclass_none = 30;
+
+Q.soldiers_b = 10;
+Q.soldiers_m = 20;
+Q.soldiers_sr = 40;
+Q.soldiers_k = 5;
+Q.soldiers_conservative = 2;
+Q.soldiers_popular_socialist = 5;
+Q.soldiers_anarchist = 6;
+Q.soldiers_other = 10;
+Q.soldiers_none = 10;
+
+Q.elites_b = 0;
+Q.elites_m = 2;
+Q.elites_sr = 2;
+Q.elites_k = 40;
+Q.elites_conservative = 25;
+Q.elites_popular_socialist = 5;
+Q.elites_anarchist = 0;
+Q.elites_other = 12;
+Q.elites_none = 10;
+!}
 go-to: election_algorithm
 set-jump: post_election
