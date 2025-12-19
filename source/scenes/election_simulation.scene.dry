@@ -106,3 +106,20 @@ Q.elites_none = 10;
 !}
 go-to: election_algorithm
 set-jump: post_election
+
+@post_election
+on-arrival: {!
+// set congress proportion to votes
+Q.m_r = Q.spd_votes;
+Q.b_r = Q.z_votes;
+Q.sr_r = Q.kpd_votes;
+Q.k_r = Q.ddp_votes;
+Q.popular_socialist_r = Q.dvp_votes;
+Q.conservative_r = Q.dnvp_votes;
+Q.anarchist_r = Q.nsdap_votes;
+Q.other_r = Q.other_votes;
+Q.none_r = Q.none_votes;
+
+The electoral system is perhaps proportional, this is all WIP so yeah.
+
+**Election Results:**
