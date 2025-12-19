@@ -119,6 +119,7 @@ Q.conservative_r = Q.dnvp_votes;
 Q.anarchist_r = Q.nsdap_votes;
 Q.other_r = Q.other_votes;
 Q.none_r = Q.none_votes;
+!}
 
 The electoral system is perhaps proportional, this is all WIP so yeah.
 
