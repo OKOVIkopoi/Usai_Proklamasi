@@ -1056,7 +1056,6 @@ Difficulty affects starting resources and inter-party relations, as well as how 
 - @single_player
 - @hard_mode
 - @local_multiplayer
-// - @online_multiplayer
 
 @easy_mode
 title: Single Player (Easy)
@@ -1092,15 +1091,6 @@ Select a party:
 title: Local Multiplayer
 choose-if: 1 == 0
 unavailable-subtitle: Not yet implemented
-
-TODO
-
-// @online_multiplayer
-// title: Online Multiplayer
-// choose-if: 1 == 0
-// unavailable-subtitle: Not yet implemented
-
-TODO
 
 @PKI
 title: Indonesian Communist Party (PKI)
