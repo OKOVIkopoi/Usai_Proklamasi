@@ -49,7 +49,6 @@ Q.PNI_is_player = 0;
 Q.Paras_is_player = 0;
 Q.PKI_is_player = 0;
 
-Q.player_in_exco = 1;
 Q.player_in_gov = 0;
 Q.player_in_KNIP = 0;
 
@@ -1030,8 +1029,6 @@ Q.tereshchenko_advisor = 1; // Mikhail Tereshchenko
 // Kadet-aligned conservatives
 Q.rodzianko_advisor = 0; // Mikhail Rodzianko
 
-// Paras advisors
-
 // PKI advisors
 Q.stasova_advisor = 1; // Aidit
 Q.shliapnikov_advisor = 1; // hmm
@@ -1040,7 +1037,6 @@ Q.lenin_advisor = 0; // Vladimir Lenin - April week 1
 // Records of stats
 Q.KNIP_support_records = [];
 Q.economic_records = []; 
-
 !}
 set-bg: img/East_Indies_t1928_(1_of_2).jpg
 new-page: true
@@ -1060,7 +1056,7 @@ Difficulty affects starting resources and inter-party relations, as well as how 
 - @single_player
 - @hard_mode
 - @local_multiplayer
-#- @online_multiplayer
+// - @online_multiplayer
 
 @easy_mode
 title: Single Player (Easy)
@@ -1099,16 +1095,15 @@ unavailable-subtitle: Not yet implemented
 
 TODO
 
-@online_multiplayer
-title: Online Multiplayer
-choose-if: 1 == 0
-unavailable-subtitle: Not yet implemented
+// @online_multiplayer
+// title: Online Multiplayer
+// choose-if: 1 == 0
+// unavailable-subtitle: Not yet implemented
 
 TODO
 
 @PKI
 title: Indonesian Communist Party (PKI)
-subtitle: Mmm, just that is my personal comment.
 
 **PKI** - one of the oldest parties in Indonesia, its future is as obstructed as its past.
 
