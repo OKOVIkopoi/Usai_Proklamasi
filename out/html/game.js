@@ -156,7 +156,7 @@
   // This function runs on a new page. Right now, this auto-saves.
   window.onNewPage = function() {
     var scene = window.dendryUI.dendryEngine.state.sceneId;
-    if (scene != 'first' && !window.justLoaded) {
+    if (scene != 'root' && !window.justLoaded) {
         window.dendryUI.autosave();
     }
     if (window.justLoaded) {
