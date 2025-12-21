@@ -1,0 +1,253 @@
+title: Status
+new-page: true
+is-special: true
+on-arrival: {!
+Q.position = "";
+
+// TODO: create a list of governing parties
+Q.governing_parties = [];
+if (Q.PPKI_in_gov) {
+    Q.governing_parties.push("PPKI");
+}
+if (Q.PNI_in_gov) {
+    Q.governing_parties.push("PNI");
+}
+if (Q.Paras_in_gov) {
+    Q.governing_parties.push("Paras");
+}
+if (Q.Masyumi_in_gov) {
+    Q.governing_parties.push("Masyumi");
+}
+if (Q.PKI_in_gov) {
+    Q.governing_parties.push("PKI");
+}
+Q.governing_parties_str = Q.governing_parties.join(", ");
+
+Q.exco_parties = [];
+
+// This shall be KNIP or smth like that.
+
+Q.exco_parties_str = Q.exco_parties.join(", ");
+
+Q.monthly_inflation_disp = Q.monthly_inflation.toFixed(1);
+Q.inflation_disp = Q.inflation.toFixed(1);
+Q.unemployed_disp = Q.unemployed.toFixed(1);
+!}
+
+= [+ player_party_name +] Status
+
+Week [+ week +], [+ month : month +] [+ year +]
+
+Position: [+ position +]
+
+Party resources available:
+[? if player_party == "PKI": [+ PKI_resources +] ?]
+[? if player_party == "Masyumi": [+ Masyumi_resources +] ?]
+[? if player_party == "PNI": [+ PNI_resources +] ?]
+[? if player_party == "Paras": [+ Paras_resources +] ?]
+[? if player_party == "PPKI": [+ PPKI_resources +] ?]
+
+Internal dissent:
+[? if player_party == "PKI": [+ PKI_dissent_percent : dissent +] ?]
+[? if player_party == "Masyumi": [+ Masyumi_dissent_percent : dissent +] ?]
+[? if player_party == "PNI": [+ PNI_dissent_percent : dissent +] ?]
+[? if player_party == "Paras": [+ Paras_dissent_percent : dissent +] ?]
+[? if player_party == "PPKI": [+ PPKI_dissent_percent : dissent +] ?]
+
+= [+ government_form : government_form +]
+
+Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
+
+Parties in government: [+ governing_parties_str +]
+
+Budget: [+ budget +]
+
+// KNIP smth elections or other 'body' elections.
+
+= Central Indonesian National Committee
+
+Chair: [+ KNIP_chair +] ([+ KNIP_chair_party +])
+
+Leadership: 
+
+Overal composition:
+Masyumi: 
+Paras: 
+PKI:
+PNI: 
+PPPKI:
+Others: 
+
+//HMMM
+
+= Peace
+
+War progress: [+ war_progress : war_score +]
+
+[? if not is_armistice and not is_peace and armistice_progress: Armistice negotiations: [+ armistice_progress +] ?]
+
+[? if is_armistice: We are currently in an armistice. ?]
+
+[? if is_armistice and not is_peace: Peace negotiations: [+ central_negotiations +]?]
+
+War weariness: [+ war_weariness : war_weariness +]
+
+Soldier unrest: [+ soldier_unrest : war_weariness +]
+
+= Land
+
+Land reform policy: [+ land_reform : land_reform +]
+
+Land reform progress: [+ land_reform_progress : land_reform_progress +]
+
+Rural unrest: [+ rural_unrest : war_weariness +]
+
+= Bread
+
+# Real income (% of 1913): [+ income +]%
+Monthly inflation: [+ monthly_inflation +]% ([+ inflation +]% annually)
+
+Hunger: [+ hunger : hunger +]
+
+Unemployment: [+ unemployed +]%
+
+Labor unrest: [+ labor_unrest : war_weariness +]
+
+
+
+
+
+@politics
+title: Politics
+on-arrival: {!
+Q.Masyumi_relation = 0;
+Q.Paras_relation = 0;
+Q.PKI_relation = 0;
+Q.PNI_relation = 0;
+Q.PPKI_relation = 0;
+switch (Q.player_party) {
+    case 'Masyumi':
+        Q.b_relation = -1;
+        Q.m_relation = Q.m_b_relation;
+        Q.k_relation = Q.b_k_relation;
+        Q.sr_relation = Q.b_sr_relation;
+        break;
+    case 'Paras':
+        Q.m_relation = -1;
+        Q.b_relation = Q.m_b_relation;
+        Q.k_relation = Q.m_k_relation;
+        Q.sr_relation = Q.m_sr_relation;
+        break;
+    case 'PKI':
+        Q.sr_relation = -1;
+        Q.b_relation = Q.b_sr_relation;
+        Q.m_relation = Q.m_b_relation;
+        Q.k_relation = Q.sr_k_relation;
+        break;
+    case 'PNI':
+        Q.k_relation = -1;
+        Q.b_relation = Q.b_k_relation;
+        Q.m_relation = Q.m_k_relation;
+        Q.sr_relation = Q.sr_k_relation;
+        break;
+}
+!}
+
+# TODO: inter-party relationships, so it's not finish huh.
+
+= Inter-party Relationships
+
+[? if player_party != "Masyumi": Masyumi: [+ Masyumi_relation : relationships +] ?]
+[? if player_party != "Masyumi": </br> Leadership: [+ Masyumi_leadership : Masyumi_leadership +] ?]
+
+[? if player_party != "Paras": Paras: [+ Paras_relation : relationships +] ?]
+[? if player_party != "Paras": </br> Leadership: [+ Paras_leadership : Paras_leadership +] ?]
+
+
+[? if player_party != "PKI": PKI: [+ PKI_relation : relationships +] ?]
+[? if player_party != "PKI": </br> Leadership: [+ PKI_leadership : PKI_leadership +] ?]
+
+
+[? if player_party != "PNI": PNI: [+ PNI_relation : relationships +] ?]
+[? if player_party != "PNI": </br> Leadership: [+ PNI_leadership : PNI_leadership +] ?]
+
+[? if player_party != "PPKI": PPKI: [+ PPKI_relation : relationships +] ?]
+[? if player_party != "PPKI": </br> Leadership: [+ PPKI_leadership : PPKI_leadership +] ?]
+
+
+= Internal factions
+
+ W I P.
+
+= [+ player_party_name +] Party Positions
+
+Current Government policy: WIPPP
+
+Labor policy: WIP
+
+War policy: IT's wip guys--
+
+Land/agricultural policy: Work. I. P.
+
+Nationality policy: WIP WIP WIPPP.
+
+@gov
+title: Government
+
+= [+ government_form : government_form +]
+
+[+ government_form : leader +]: [+ prime_minister +] ([+ prime_minister_party +])
+
+It's all WIP, the wIp Cabinet.
+
+# there is no content for the education minister for now.
+
+Government efficacy:
+
+Government legitimacy: 
+
+= Industrial Production
+
+WIP
+
+= Finances and Debt
+
+Budget balance: [+ budget +]
+
+Noteable domestic debt: [+ domestic_debt +]
+
+Foreign debt: [+ foreign_debt +]
+
+
+@defense
+title: Defense
+
+[? if is_armistice and not is_peace: WARRRR. ?]
+
+[? if is_peace: A peace WIP. ?]
+
+= Armies and Fronts
+
+Northern Front: .. divisions
+
+Western Front: .. divisions
+
+Southern Front: .. divisions
+
+Eastern Front: divisions
+
+Else-where Front: .. divisions
+
+Reserves: .. divisions
+
+Morale: WIP
+
+Discipline: WIP
+
+Supply: Uhhh WIP
+
+= Foreign Relations
+
+Relations with the West: 
+
+WIP, WIP, WIP, W...
