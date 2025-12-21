@@ -1,6 +1,5 @@
-title: First Scene
+title: Root Scene
 new-page: true
-setRoot: true
 go-to: post_event if started = 1; start_menu if started = 0
 
 # TODO: do that thing that we did before...
