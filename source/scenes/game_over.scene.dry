@@ -16,7 +16,7 @@ if (Q.player_party != 'Masyumi','PPKI','PNI','Paras','PKI') {this.achieve('Testw
 @achievements
 title: Achievements
 tags: endings
-go-to: eg_menu if started == 1; first.start_menu_2 if started == 0
+go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
 = Completed Achievements in this Playthrough
 
