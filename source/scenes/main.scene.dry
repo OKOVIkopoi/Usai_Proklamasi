@@ -1,5 +1,5 @@
 title: Next month
-set-bg: img/East_Indies_t1928_(1_of_2).jpg
+set-bg: img/Indonesie_map_bBelanda.jpg
 is-hand: true
 on-arrival: {!
 if (Q.advisor_action_timer <= 0) {
