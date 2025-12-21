@@ -15,7 +15,7 @@ Removing advisors will increase dissent from their faction of the party, while s
 
 - @RM_main: Remove advisors.
 - @add_advisors: Add advisors.
-- @first: Don't change the party leadership.
+- @root: Don't change the party leadership.
 - @easy_discard
 
 @RM_main
@@ -28,7 +28,7 @@ frequency: 1
 
 @remove_none
 title: Stop changing advisors.
-go-to: first
+go-to: root
 tags: Masyumi_RM_advisor
 
 
