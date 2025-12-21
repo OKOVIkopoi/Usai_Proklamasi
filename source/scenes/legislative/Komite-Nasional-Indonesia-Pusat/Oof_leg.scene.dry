@@ -9,6 +9,6 @@ card-image: img/ blank
 
 Let's just go back and don't pick this again, it's WIPP!
 
-- @first: Nothingburger.
+- @root: Nothingburger.
 - @easy_discard
 - @Cancel_Advisor_Action
