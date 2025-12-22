@@ -109,28 +109,39 @@ Q.PNI_relation = 0;
 Q.PPKI_relation = 0;
 switch (Q.player_party) {
     case 'Masyumi':
-        Q.PKI_relation = 
-        Q.PNI_relation = 
-        Q.PPKI_relation = 
-        Q.Paras_relation = 
+        Q.Masyumi_relation = -1;
+        Q.PKI_relation = Q.PKI_Masyumi_relation;
+        Q.PNI_relation = Q.Masyumi_PNI_relation;
+        Q.PPKI_relation = Q.Masyumi_PPKI_relation;
+        Q.Paras_relation = Q.Masyumi_Paras_relation;
         break;
     case 'Paras':
-        Q.PKI_relation = :
-        Q.PNI_relation = :
-        Q.PPKI_relation = ;
-        Q.Masyumi_relation = ;
+        Q.Paras_relation = -1;
+        Q.PKI_relation = Q.PKI_Paras_relation;
+        Q.PNI_relation = Q.Paras_PNI_relation;
+        Q.PPKI_relation = Q.PPKI_Paras_relation;
+        Q.Masyumi_relation = Q.Masyumi_Paras_relation;
         break;
     case 'PKI':
-        Q.Paras_relation = -1;
-        Q.PNI_relation = ;
-        Q.PPKI_relation = ;
-        Q.Masyumi_relation = ;
+        Q.PKI_relation = -1;
+        Q.Paras_relation = Q.PKI_Paras_relation;
+        Q.PNI_relation = Q.PKI_PNI_relation;
+        Q.PPKI_relation = Q.PPKI_PKI_relation;
+        Q.Masyumi_relation = Q.Masyumi_PPKI_relation;
         break;
     case 'PNI':
-        Q.PKI_relation = -1;
-        Q.Masyumi_relation = ;
-        Q.PPKI_relation = ;
-        Q.Paras_relation = ;
+        Q.PNI_relation = -1;
+        Q.Masyumi_relation = Q.Masyumi_PNI_relation;
+        Q.Paras_relation = Q.Paras_PNI_relation;
+        Q.PKI_relation = Q.PKI_PNI_relation;
+        Q.PPKI_relation = Q.PPKI_PNI_relation;
+        break;
+    case 'PPKI':
+        Q.PPKI_relation = -1;
+        Q.Masyumi_relation = Q.Masyumi_PPKI;
+        Q.Paras_relation = Q.PPKI_Paras_relation;
+        Q.PNI_relation = Q.PPKI_PNI_relation;
+        Q.PKI_relation= Q.PPKI_PKI_relation;
         break;
 }
 !}
