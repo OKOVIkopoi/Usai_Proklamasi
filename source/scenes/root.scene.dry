@@ -424,8 +424,8 @@ Q.democrats_in_gov = 0;
 // are we currently in an all-socialist coalition?
 Q.in_all_socialist_coalition = 0;
 
-Q.president = "supposedly Sukarno";
-Q.prime_minister_party = "Independent/PNI";
+Q.now_president = "supposedly Sukarno";
+Q.president_party = "Independent/PNI";
 Q.agriculture_minister = "WIP and so down this";
 Q.agriculture_minister_party = "Independent";
 Q.justice_minister = "Kerensky";
@@ -650,7 +650,7 @@ Q.unrest_modifier = 1;
 
 // PKI threat
 Q.PKI_threat = 0;
-// coup progress basically determines whether the Kornilov affair is a fake coup or a real coup attempt.
+// coup, ? Or...... WIP
 Q.coup_progress = 0;
 
 // revolutionary preparations...
