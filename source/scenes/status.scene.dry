@@ -23,11 +23,7 @@ if (Q.PKI_in_gov) {
 }
 Q.governing_parties_str = Q.governing_parties.join(", ");
 
-Q.exco_parties = [];
-
 // This shall be KNIP or smth like that.
-
-Q.exco_parties_str = Q.exco_parties.join(", ");
 
 Q.monthly_inflation_disp = Q.monthly_inflation.toFixed(1);
 Q.inflation_disp = Q.inflation.toFixed(1);
@@ -56,7 +52,7 @@ Internal dissent:
 
 = [+ government_form : government_form +]
 
-Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
+President: [+ now_president +] ([+ president_party +])
 
 Parties in government: [+ governing_parties_str +]
 
@@ -66,7 +62,7 @@ Budget: [+ budget +]
 
 = Central Indonesian National Committee
 
-Chair: [+ KNIP_chair +] ([+ KNIP_chair_party +])
+Chair: 
 
 Leadership: 
 
@@ -75,36 +71,22 @@ Masyumi:
 Paras: 
 PKI:
 PNI: 
-PPPKI:
+PPKI:
 Others: 
 
 //HMMM
 
 = Peace
 
-War progress: [+ war_progress : war_score +]
-
-[? if not is_armistice and not is_peace and armistice_progress: Armistice negotiations: [+ armistice_progress +] ?]
-
-[? if is_armistice: We are currently in an armistice. ?]
-
-[? if is_armistice and not is_peace: Peace negotiations: [+ central_negotiations +]?]
+War progress:
 
 War weariness: [+ war_weariness : war_weariness +]
 
-Soldier unrest: [+ soldier_unrest : war_weariness +]
+Societal unrest:
 
-= Land
+= General Economy
 
-Land reform policy: [+ land_reform : land_reform +]
-
-Land reform progress: [+ land_reform_progress : land_reform_progress +]
-
-Rural unrest: [+ rural_unrest : war_weariness +]
-
-= Bread
-
-# Real income (% of 1913): [+ income +]%
+# Real income (% of ..WIP): [+ income +]%
 Monthly inflation: [+ monthly_inflation +]% ([+ inflation +]% annually)
 
 Hunger: [+ hunger : hunger +]
@@ -127,28 +109,28 @@ Q.PNI_relation = 0;
 Q.PPKI_relation = 0;
 switch (Q.player_party) {
     case 'Masyumi':
-        Q.b_relation = -1;
-        Q.m_relation = Q.m_b_relation;
-        Q.k_relation = Q.b_k_relation;
-        Q.sr_relation = Q.b_sr_relation;
+        Q.PKI_relation = 
+        Q.PNI_relation = 
+        Q.PPKI_relation = 
+        Q.Paras_relation = 
         break;
     case 'Paras':
-        Q.m_relation = -1;
-        Q.b_relation = Q.m_b_relation;
-        Q.k_relation = Q.m_k_relation;
-        Q.sr_relation = Q.m_sr_relation;
+        Q.PKI_relation = :
+        Q.PNI_relation = :
+        Q.PPKI_relation = ;
+        Q.Masyumi_relation = ;
         break;
     case 'PKI':
-        Q.sr_relation = -1;
-        Q.b_relation = Q.b_sr_relation;
-        Q.m_relation = Q.m_b_relation;
-        Q.k_relation = Q.sr_k_relation;
+        Q.Paras_relation = -1;
+        Q.PNI_relation = ;
+        Q.PPKI_relation = ;
+        Q.Masyumi_relation = ;
         break;
     case 'PNI':
-        Q.k_relation = -1;
-        Q.b_relation = Q.b_k_relation;
-        Q.m_relation = Q.m_k_relation;
-        Q.sr_relation = Q.sr_k_relation;
+        Q.PKI_relation = -1;
+        Q.Masyumi_relation = ;
+        Q.PPKI_relation = ;
+        Q.Paras_relation = ;
         break;
 }
 !}
@@ -185,27 +167,28 @@ Current Government policy: WIPPP
 
 Labor policy: WIP
 
-War policy: IT's wip guys--
+Foreign Affairs policy: IT's wip guys--
 
 Land/agricultural policy: Work. I. P.
 
-Nationality policy: WIP WIP WIPPP.
+Else policy: WIP WIP WIPPP.
 
 @gov
 title: Government
 
 = [+ government_form : government_form +]
 
-[+ government_form : leader +]: [+ prime_minister +] ([+ prime_minister_party +])
+President: W I P ()
 
 It's all WIP, the wIp Cabinet.
 
-# there is no content for the education minister for now.
+# Unfinish... should finish then.
 
 Government efficacy:
 
 Government legitimacy: 
 
+@economy
 = Industrial Production
 
 WIP
@@ -222,9 +205,7 @@ Foreign debt: [+ foreign_debt +]
 @defense
 title: Defense
 
-[? if is_armistice and not is_peace: WARRRR. ?]
-
-[? if is_peace: A peace WIP. ?]
+Maybe deleted in the Future, currently nothing... WIP.
 
 = Armies and Fronts
 
