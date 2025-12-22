@@ -217,8 +217,7 @@ Q.Paras_nationality_policy = 0;
 
 
 // inter-party relations
-// triangle:
-// Masyumi -> PPKI -> PNI -> Paras -> PKI
+// Roughly I think it's like this.
 Q.Masyumi_PPKI_relation = 40;
 Q.Masyumi_PNI_relation = 55;
 Q.Masyumi_Paras_relation = 40;
@@ -228,6 +227,7 @@ Q.PPKI_PKI_relation = 20;
 Q.PKI_Masyumi_relation = 25;
 Q.PKI_PNI_relation = 20;
 Q.PKI_Paras_relation = 16;
+Q.Paras_PNI_relation = 42;
 
 // only WIP WIP WIP
 Q.PKI_suss_relation = 50;
@@ -1058,7 +1058,7 @@ Difficulty affects starting resources and inter-party relations, as well as how 
 
 @easy_mode
 title: Single Player (Easy)
-on-arrival: difficulty = -1; Masyumi_resources = 3; PPKI_resources = 4; PNI_resources = 4; Paras_resources = 2; PKI_dues = 4; Masyumi_PPKI_relation = 50; Masyumi_PNI_relation = 62; PPKI_Paras_relation = 50; m_split_threshold = 65; PNI_split_threshold = 65; Masyumi_support_change = 10; PNI_support_change = 10; Masyumi_discipline_change = 8; PNI_discipline_change = 8; max_advisors = 5; ipr_change = 8; unrest_modifier = 1.6
+on-arrival: difficulty = -1; Masyumi_resources = 3; PPKI_resources = 4; PNI_resources = 4; Paras_resources = 2; PKI_dues = 4; PNI_split_threshold = 65; Masyumi_support_change = 10; PNI_support_change = 10; Masyumi_discipline_change = 8; PNI_discipline_change = 8; max_advisors = 5; ipr_change = 8; unrest_modifier = 1.6
 go-to: party_selection
 
 Select a party:
