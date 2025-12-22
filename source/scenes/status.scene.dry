@@ -2,7 +2,6 @@ title: Status
 new-page: true
 is-special: true
 on-arrival: {!
-Q.position = "";
 
 // TODO: create a list of governing parties
 Q.governing_parties = [];
@@ -34,7 +33,7 @@ Q.unemployed_disp = Q.unemployed.toFixed(1);
 
 Week [+ week +], [+ month : month +] [+ year +]
 
-Position: [+ position +]
+Position:
 
 Party resources available:
 [? if player_party == "PKI": [+ PKI_resources +] ?]
@@ -86,7 +85,7 @@ Societal unrest:
 
 = General Economy
 
-# Real income (% of ..WIP): [+ income +]%
+# Real income (% of ..WIP):
 Monthly inflation: [+ monthly_inflation +]% ([+ inflation +]% annually)
 
 Hunger: [+ hunger : hunger +]
@@ -151,26 +150,21 @@ switch (Q.player_party) {
 = Inter-party Relationships
 
 [? if player_party != "Masyumi": Masyumi: [+ Masyumi_relation : relationships +] ?]
-[? if player_party != "Masyumi": </br> Leadership: [+ Masyumi_leadership : Masyumi_leadership +] ?]
 
 [? if player_party != "Paras": Paras: [+ Paras_relation : relationships +] ?]
-[? if player_party != "Paras": </br> Leadership: [+ Paras_leadership : Paras_leadership +] ?]
 
 
 [? if player_party != "PKI": PKI: [+ PKI_relation : relationships +] ?]
-[? if player_party != "PKI": </br> Leadership: [+ PKI_leadership : PKI_leadership +] ?]
 
 
 [? if player_party != "PNI": PNI: [+ PNI_relation : relationships +] ?]
-[? if player_party != "PNI": </br> Leadership: [+ PNI_leadership : PNI_leadership +] ?]
+
 
 [? if player_party != "PPKI": PPKI: [+ PPKI_relation : relationships +] ?]
-[? if player_party != "PPKI": </br> Leadership: [+ PPKI_leadership : PPKI_leadership +] ?]
-
 
 = Internal factions
 
- W I P.
+W I P.
 
 = [+ player_party_name +] Party Positions
 
@@ -189,7 +183,7 @@ title: Government
 
 = [+ government_form : government_form +]
 
-President: W I P ()
+President: [+ now_president +] ([+ president_party +])
 
 It's all WIP, the wIp Cabinet.
 
@@ -214,11 +208,13 @@ Noteable domestic debt: [+ domestic_debt +]
 
 Foreign debt: [+ foreign_debt +]
 
+@security
+title: Security
+
+Maybe deleted in the Future, currently nothing... WIP.
 
 @defense
 title: Defense
-
-Maybe deleted in the Future, currently nothing... WIP.
 
 = Armies and Fronts
 
