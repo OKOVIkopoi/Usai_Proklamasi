@@ -9,7 +9,7 @@ new-page: true
 go-to: start_menu_2
 
 
-= Social Democracy: Petrograd 1917 - An Alternate History
+= Usai Proklamasi: Same or Different
 
 @start_menu_2
 
@@ -31,7 +31,7 @@ Q.week_actions = 0;
 // how many actions have been taken this month?
 Q.month_actions = 0;
 
-// 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
+// -1 is easy btw, 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;
 Q.historical_mode = 0;
 Q.player_party_name = "Majelis Syuro Muslimin Indonesia";
@@ -42,7 +42,7 @@ Q.party_name_map = {"Masyumi": "Majelis Syuro Muslimin Indonesia",
         "Paras": "Partai Rakyat Sosialis",
         "PKI": "Partai Komunis Indonesia"};
 
-Q.Masyumi_is_player = 1;
+Q.Masyumi_is_player = 0;
 Q.PPKI_is_player = 0;
 Q.PNI_is_player = 0;
 Q.Paras_is_player = 0;
@@ -57,7 +57,7 @@ Q.n_players = 1;
 // the player ID of the next player
 Q.next_player = 0;
 
-Q.player1_party = "Masyumi";
+Q.player1_party = "Test";
 Q.player2_party = "";
 Q.player3_party = "";
 Q.player4_party = "";
