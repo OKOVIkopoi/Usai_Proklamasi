@@ -118,16 +118,16 @@ Q.PKI_dissent_percent = 4;
 // leadership: 1 = Reformists, 2 = Moderate Practitioners, 3 = Conservative WIPs, 4 = Revolutionary Syariatists
 Q.Masyumi_leadership = 3;
 Q.Masyumi_factions = ['reformist', 'moderate', 'conservative', 'revolutionary_right'];
-Q.reformist_strength = 10;
-Q.reformist_dissent = 10;
-Q.moderate_strength = 60;
-Q.moderate_dissent = 2;
-Q.conservative_strength = 30;
-Q.conservative_dissent = 0;
-Q.reformist_split = 0;
-Q.moderate_split = 0;
-Q.conservative_split = 0;
-Q.revolutionary_right_split = 0;
+Q.Masyumi_reformist_strength = 10;
+Q.Masyumi_reformist_dissent = 10;
+Q.Masyumi_moderate_strength = 60;
+Q.Masyumi_moderate_dissent = 2;
+Q.Masyumi_conservative_strength = 30;
+Q.Masyumi_conservative_dissent = 0;
+Q.Masyumi_reformist_split = 0;
+Q.Masyumi_moderate_split = 0;
+Q.Masyumi_conservative_split = 0;
+Q.Masyumi_revolutionary_right_split = 0;
 // WIP can split uh WIP
 Q.Masyumi_war_policy = 2;
 Q.Masyumi_industrial_policy = 1;
@@ -143,18 +143,10 @@ Q.Masyumi_soldiers_org = 1;
 Q.PPKI_factions = ['social_patriot', 'defensist', 'internationalist'];
 // unity is WIP
 // leader- WIP
-// defensist = 0, internationalist = 1
+// unknown = 0, unknown = 1
 Q.PPKI_leadership = 0;
 // taking a nonaligned position...
 Q.PPKI_independent = 0;
-Q.social_patriot_strength = 20;
-Q.social_patriot_dissent = 30;
-Q.defensist_strength = 80;
-Q.defensist_dissent = 10;
-Q.internationalist_strength = 30;
-Q.internationalist_dissent = 35;
-Q.defensist_split = 0;
-Q.internationalist_split = 0;
 // -1 = expansionist, 0 = social patriot, 1 = revolutionary defensist, 2 = internationalist, 3 = revolutionary defeatist
 // less is more pro-war <-I wanna comment but nvm
 Q.PPKI_war_policy = 1;
@@ -255,8 +247,6 @@ Q.bonding_capacity = 4;
 
 // military are WIP
 
-
-
 // social and economic circumstances
 
 // Economic and social quality of life
@@ -293,21 +283,21 @@ Q.unemployed = 4;
 // This is all fudged; I don't have actual stats, me too aucchen-for now
 // loosely based on WIP
 // percent allocated to military production
-Q.military_industry = 50;
+Q.military_industry = 0;
 // percent allocated to civilian production
-Q.civilian_industry = 45;
+Q.civilian_industry = 0;
 // percent allocated to production of agricultural equipment, etc. (can increase food production)
-Q.agricultural_industry = 1;
+Q.agricultural_industry = 0;
 // production of train locomotives, cars, and rails
-Q.transportation_industry = 1;
+Q.transportation_industry = 0;
 // industrial capacity allocated to industrial expansion and replacing capital depreciation (if this is below 3% of total industrial capacity, then industry declines)
-Q.capital_industry = 3;
+Q.capital_industry = 0;
 // only used for allocation...
-Q.unused_industry = 0;
+Q.unused_industry = 100;
 // industrial changes limit is the amount of production that can be retooled per week or (WIP) month.
 Q.industrial_changes_limit = 2;
 // total industrial production (hmmmm, WIP)
-Q.industry = 100;
+Q.industry = 0;
 
 
 /////////////////////// transportation
@@ -331,7 +321,7 @@ Q.civilian_trains = 60;
 // I just halved the above number bc of round trips lol, uh no comment from Modder
 Q.train_capacity = 140000;
 
-
+// Land reform thingy
 Q.land_reform = 0;
 Q.land_reform_progress = 0;
 
@@ -344,7 +334,6 @@ Q.land_reform_progress = 0;
 // = 26000 million kg of potatoes
 // = 106000 million kg of grain + potatoes
 // extremely unrealistic but maybe we should divide it by 12 for gameplay's sake... or divide it by 52 for even more unrealistic gameplay's sake
-// 
 // grain: 51%, potatoes: 14%, cattle, sheep/goats, pigs: 7% each
 // 86% of agriculture goes to food crops..., 51% of all agriculture is grain
 // = 134,902 million kg
@@ -405,7 +394,6 @@ if (Q.soldier_hunger < 0) {
 
 // military goods production = Q.industry * Q.military_industry/100
 
-
 ////////////////////// Current government
 // party names, hm yeah those
 // governments don't necessarily have to be the whatever government right now
@@ -415,11 +403,6 @@ Q.PNI_in_gov = 1;
 Q.Paras_in_gov = 0;
 Q.PKI_in_gov = 0;
 // splinter parties - WIP
-Q.left_sr_in_gov = 0;
-Q.right_sr_in_gov = 0;
-Q.internationalist_in_gov = 0;
-Q.defensist_in_gov = 0;
-Q.conservative_in_gov = 0;
 Q.democrats_in_gov = 0;
 // are we currently in an all-socialist coalition?
 Q.in_all_socialist_coalition = 0;
@@ -427,33 +410,13 @@ Q.in_all_socialist_coalition = 0;
 Q.now_president = "supposedly Sukarno";
 Q.president_party = "Independent/PNI";
 Q.agriculture_minister = "WIP and so down this";
-Q.agriculture_minister_party = "Independent";
-Q.justice_minister = "Kerensky";
-Q.justice_minister_party = "Trudovik";
-Q.interior_minister = "Lvov";
-Q.interior_minister_party = "Independent";
-Q.finance_minister = "Tereshchenko";
-Q.finance_minister_party = "Independent";
-Q.war_minister = "Guchkov";
-Q.war_minister_party = "Octobrist";
-Q.foreign_minister = "Milyukov";
-Q.foreign_minister_party = "Kadet";
-Q.transport_minister = "Nekrasov";
-Q.transport_minister_party = "Kadet";
-// minister of trade and industry
-Q.trade_minister = "Konovalov";
-Q.trade_minister_party = "Progressive";
+Q.agriculture_minister_party = "WIPP";
 // at the start, WIP are the same, but there will be a separate WIP WIP.
-Q.food_minister = "Shingarev";
-Q.food_minister_party = "Kadet";
-Q.education_minister = "Oldenburg";
-Q.education_minister_party = "Kadet";
 
 // government efficacy - affects efficacy of actions. 
-Q.prov_gov_efficacy = 0.7;
 
 // current government legitimacy
-Q.prov_gov_legitimacy = 80;
+Q.gov_legitimacy = 30;
 
 // provisional government formations
 // coalition dissent
@@ -473,29 +436,15 @@ Q.Paras_in_KNIP = 0;
 Q.PKI_in_KNIP = 0;
 
 // executive committee WIP
-Q.Masyumi_in_exco = 0;
-Q.PPKI_in_exco = 0;
-Q.PNI_in_exco = 0;
-Q.Paras_in_exco = 0;
-Q.PKI_in_exco = 0;
 
 // KNIP soon or later coalitions
-Q.in_defensist_coalition = 0;
-Q.in_internationalist_coalition = 0;
-Q.in_WIP_coalition = 1;
-Q.in_revolutionary_coalition = 0;
 Q.in_anti_PKI_coalition = 0;
 Q.KNIP_coalition_dissent = 0;
 
 // splinter parties
-Q.internationalist_in_exco = 0;
-Q.defensist_in_exco = 0;
-Q.left_sr_in_exco = 0;
-Q.right_sr_in_exco = 0;
-Q.communist_in_exco = 0;
 
+// Head of KNIP thingy
 Q.KNIP_chair = "wut";
-Q.soviet_chair_party = "noneeeee";
 
 // efficacy of KNIP decisions
 Q.KNIP_efficacy = 0.5;
@@ -516,7 +465,7 @@ Q.materiel = 200;
 // military discipline - used in offense
 Q.discipline = 0.5;
 // military leadership
-Q.leadership = 0.6;
+
 // War weariness is between 0 and 100
 Q.war_weariness = 40;
 // supply quality is based on military industry
@@ -543,7 +492,7 @@ Q.reserve_soldiers = 100;
 Q.movement_capacity = Math.round(0.001*Q.military_trains*Q.train_capacity/100);
 Q.soldiers_moved = 0;
 
-Q.fronts_to_enemy = {'northern': 'northern', 'western': 'western', 'southern': 'southern', 'eastern': 'eastern', 'elsewhere': 'WIPPP'};
+Q.fronts_to_enemy = {'northern': 'northern', 'western': 'western', 'southern': 'southern', 'eastern': 'eastern', 'elsewhere': 'WIPPPPP'};
 Q.enemy_fronts = ['northern', 'western', 'eastern'];
 // The opposing side
 Q.northern_enemy_soldiers = 80;
@@ -576,9 +525,8 @@ Q.attacking = 1;
 Q.in_offensive_battle = 0;
 Q.in_defensive_battle = 0;
 // special case for the WIP
-Q.in_june_offensive = 0;
 
-// battle outcomes: 1 = victory, -1 = defeat, -2 = major defeat
+// battle outcomes: 2 = Major victory, 1 = victory, -1 = defeat, -2 = major defeat
 Q.battle_outcome = 0;
 // number of battles
 Q.battle_count = 0;
@@ -586,15 +534,14 @@ Q.victory_count = 0;
 Q.defeat_count = 0;
 
 // war progress/frontline
-// -1 = minor Central Powers gains
+// -1 = minor e n e m y gains
 // -2 = gains
 // -3 = major gains
-// -4 = very major gains
-Q.northern_progress = -1;
-Q.western_progress = -2;
-Q.southern_progress = 1;
-Q.eastern_progress = -1;
-Q.elsewhere_progress = 1;
+Q.northern_progress = 0;
+Q.western_progress = 0;
+Q.southern_progress = 0;
+Q.eastern_progress = 0;
+Q.elsewhere_progress = 0;
 Q.war_progress = Q.northern_progress + Q.western_progress + Q.southern_progress + Q.eastern_progress + Q.elsewhere_progress;
 // Militias
 
@@ -609,7 +556,7 @@ Q.workers_militia_PNI_loyalty = 25;
 Q.workers_militia_Paras_loyalty = 0;
 Q.workers_militia_PKI_loyalty = 50;
 Q.workers_militia_KNIP_loyalty = 0;
-Q.workers_militia_prov_gov_loyalty = 20;
+Q.workers_militia_gov_loyalty = 20;
 Q.workers_militia_independent = 25;
 
 // Overall Indonesian Military that is WIP
@@ -622,13 +569,10 @@ Q.paramilitaries_PNI_loyalty = 30;
 Q.paramilitaries_Paras_loyalty = 0;
 Q.paramilitaries_PKI_loyalty = 45;
 Q.paramilitaries_KNIP_loyalty = 0;
-Q.paramilitaries_prov_gov_loyalty = 20;
+Q.paramilitaries_gov_loyalty = 20;
 Q.paramilitaries_independent = 22;
 
-// rural militia...
-Q.rural_militia_strength = 0;
-Q.rural_militia_militancy = 0;
-Q.rural_militia_loyalty = 0;
+// rural militia... maybe removed instead
 
 // loyal troops will always be loyal to the provisional government.
 Q.loyal_troops_strength = 0;
@@ -669,7 +613,6 @@ Q.usa_loan_cap = 5;
 // negotiations for a general peace
 Q.general_negotiations = 0;
 // negotiations for a peace...
-Q.central_negotiations = 0;
 Q.armistice_progress = 0;
 // has an armistice been signed?
 Q.is_armistice = 0;
@@ -677,7 +620,6 @@ Q.is_armistice = 0;
 Q.is_peace = 0;
 
 // Demographics ////////////////////////////////////
-
 
 // Proportion of different social groups nationally (based in WIPing and fudging)
 Q.workers = 20; // 
@@ -732,162 +674,55 @@ Chuvash 1
 Georgian 1
 Uzbek 1
 */
-Q.russians = 50;
-Q.ukrainians = 20;
-Q.jews = 4.5;
-Q.kyrgyz_kazakh = 3.4;
-Q.tatar = 3.4;
-Q.other_turkic = 3;
-Q.latvians = 1;
-Q.estonians = 1;
-Q.georgians = 1;
-Q.armenians = 1;
-Q.germans = 1;
-Q.others= 5;
-Q.chinese = 0.1;
+Q.pop_others= 5;
 
 // social groups proportion in excuse me, WIP
-Q.workers_petrograd = 55;
-Q.middle_petrograd = 20;
-Q.peasants_petrograd = 2;
-Q.soldiers_petrograd = 8;
-Q.underclass_petrograd = 10;
-Q.elites_petrograd = 5;
 
 // quality of life (currently unused)
-Q.workers_qol = 100;
-Q.peasants = 100;
 
 Q.classes = ['workers', 'middle', 'elites', 'peasants', 'soldiers', 'underclass'];
-Q.minorities = ['ukrainians', 'kyrgyz_kazakh', 'tatar', 'other_turkic', 'jews', 'latvians', 'estonians', 'georgians', 'armenians', 'others'];
-Q.major_parties = ['Masyumi', 'PPKI', 'PNI', 'PKI'];
+Q.minorities = [];
+Q.major_parties = [];
 // parties represented in the KNIP
-Q.KNIP_parties = ['m', 'b', 'sr', 'anarchist', 'other'];
-Q.parties = ['m', 'b', 'sr', 'k', 'popular_socialist', 'conservative', 'other', 'anarchist', 'none'];
-Q.minority_parties = ['ukrainian_sr', 'alash', 'musavat', 'dashnak', 'jewish_socialists', 'jewish_national_list', 'muslim_socialists', 'turkic_muslim_parties', 'cossacks'];
+Q.KNIP_parties = [];
+Q.parties = [];
+Q.minority_parties = [];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_b = 10;
-Q.workers_m = 50;
-Q.workers_sr = 30;
-Q.workers_k = 2;
-Q.workers_conservative = 1;
-Q.workers_popular_socialist = 2;
-Q.workers_anarchist = 5;
-Q.workers_other = 3;
-Q.workers_none = 10;
+Q.workers_other = 0;
 
-Q.workers_pro_prov_gov = 85;
-Q.workers_pro_soviet = 95;
+Q.workers_pro_gov = 30;
+Q.workers_pro_KNIP = 0;
 
-Q.middle_b = 5;
-Q.middle_m = 10;
-Q.middle_sr = 10;
-Q.middle_k = 40;
-Q.middle_conservative = 10;
-Q.middle_popular_socialist = 5;
-Q.middle_anarchist = 1;
-Q.middle_other = 15;
-Q.middle_none = 10;
+Q.middle_none = 0;
 
-Q.middle_pro_prov_gov = 85;
-Q.middle_pro_KNIP = 0;
+Q.peasants_other = 0;
 
-Q.peasants_b = 5;
-Q.peasants_m = 5;
-Q.peasants_sr = 55;
-Q.peasants_k= 5;
-Q.peasants_conservative = 10;
-Q.peasants_popular_socialist = 10;
-Q.peasants_anarchist = 5;
-Q.peasants_other = 10;
-Q.peasants_none = 10;
+Q.underclass_other = 0;
 
-Q.peasants_pro_prov_gov = 40;
-Q.peasants_pro_KNIP = 0;
+Q.soldiers_other = 0;
 
-Q.underclass_b = 15;
-Q.underclass_m = 5;
-Q.underclass_sr = 15;
-Q.underclass_k = 0;
-Q.underclass_conservative = 0;
-Q.underclass_popular_socialist = 5;
-Q.underclass_anarchist = 15;
-Q.underclass_other = 5;
-Q.underclass_none = 30;
-
-Q.underclass_pro_prov_gov = 50;
-Q.underclass_pro_KNIP = 0;
-
-Q.soldiers_b = 10;
-Q.soldiers_m = 20;
-Q.soldiers_sr = 40;
-Q.soldiers_k = 5;
-Q.soldiers_conservative = 2;
-Q.soldiers_popular_socialist = 5;
-Q.soldiers_anarchist = 6;
-Q.soldiers_other = 10;
-Q.soldiers_none = 10;
-
-// this rises a lot due to Order Number 1
-Q.soldiers_pro_prov_gov = 50;
+// this rises a lot due WIP
+Q.soldiers_pro_gov = 50;
 Q.soldiers_pro_KNIP = 0;
 
-Q.elites_b = 0;
-Q.elites_m = 2;
-Q.elites_sr = 2;
-Q.elites_k = 40;
-Q.elites_conservative = 25;
-Q.elites_popular_socialist = 5;
-Q.elites_anarchist = 0;
-Q.elites_other = 12;
-Q.elites_none = 10;
+Q.elites_other = 0;
 
-Q.elites_pro_prov_gov = 70;
+Q.elites_pro_gov = 40;
 Q.elites_pro_KNIP = 0;
 
 // minority party support:
 // based on the numbers
-Q.ukrainians_ukrainian_sr = 75;
-Q.georgians_m = 80;
-Q.latvians_b = 75;
-Q.armenians_m = 25;
-Q.armenians_dashnak = 50;
-Q.jews_jewish_national_list = 40;
-Q.jews_m = 20;
-Q.kyrgyz_kazakh_alash = 50;
-Q.tatar_musavat = 30;
-Q.kyrgyz_kazakh_muslim_socialists = 20;
-Q.kyrgyz_kazakh_turkic_muslim_parties = 20;
-Q.tatar_muslim_socialists = 20;
-Q.tatar_turkic_muslim_parties = 20;
-Q.others_turkic_turkic_muslim_parties = 30;
-Q.others_turkic_muslim_socialists = 20;
-Q.others_cossacks = 20;
 
-Q.minorities_pro_prov_gov = 80;
-Q.minorities_pro_KNIP = 0;
-
-// Current currentt government
+// Currenttt government
 
 // The KNIP compositions
 // I can't find hard numbers
-Q.b_KNIP = 9;
-Q.m_KNIP = 40;
-Q.sr_KNIP = 33;
-Q.other_KNIP = 18;
 
 // KNIP electoral bonuses
-Q.m_KNIP_bonus = 1;
-Q.sr_KNIP_bonus = 1;
-Q.b_soviet_bonus = 0;
 
-// Petrograd City Duma
-Q.b_petrograd = 10;
-Q.m_petrograd = 20;
-Q.sr_petrograd = 20;
-
+// Smth ReInSe stuff
 
 // Advisors/Leaders
 Q.Masyumi_n_advisors = 3;
@@ -958,7 +793,7 @@ Q.timers = [//Masyumi_party
             ];
 Q.advisor_action_timer = 0;
 
-Q.prov_gov_policies_timer = 3;
+Q.gov_policies_timer = 3;
 Q.food_shortages_timer = 2;
 Q.high_inflation_timer = 2;
 Q.land_seizures_timer = 4;
@@ -967,71 +802,40 @@ Q.crime_wave_timer = 5;
 Q.enemy_reinforcements_timer = 0;
 
 // House of Representatives election
-Q.election_type = "ca";
-Q.ca_progress = 0;
-Q.ca_scheduled = 0;
+Q.election_type = "DPR";
+Q.DPR_progress = 0;
+Q.DPR_scheduled = 0;
 Q.next_election_year = 1950;
 Q.next_election_month = 12;
-Q.next_election_week = 0;
+Q.next_election_week = 1;
 Q.next_election_time = 100;
 Q.time_to_election = 100;
 
 
 // Masyumi advisors
 // defensists
-Q.chkheidze_advisor = 1; // Nikolai Chkheidze
-Q.tsereteli_advisor = 0; // Irakli Tsereteli - arrive March week 3
-Q.plekhanov_advisor = 0; // Georgi Plekhanov - arrive March week 3
-Q.dan_advisor = 0; // Fyodor Dan - Arrive March week 3
-Q.broido_advisor = 0; // Eva Broido
-Q.liber_advisor = 0; // Mikhail Liber (Bundist)
-Q.zasulich_advisor = 0; // Vera Zasulich
+Q.chkheidze_advisor = 0; // Just for example, ofc not that man
 // center/non-aligned
-Q.groman_advisor = 0; // Vladimir Groman - economist
-Q.skobelev_advisor = 1; // Matvei Skobelev
-Q.voitinsky_advisor = 0; // Vladimir Voitinsky - arrive March week 3 (defensist-leaning)
 // internationalists
-Q.martov_advisor = 0; // Julius Martov - arrive April week 4
-Q.axelrod_advisor = 0; // Pavel Axelrod
-Q.sukhanov_advisor = 1; // Nikolai Sukhanov
 
 
 // PPKI advisors
-// right-sr
-Q.avksentiev_advisor = 0; // Nikolai Avksentiev
-Q.savinkov_advisor = 0; // Boris Savinkov
-Q.kondratiev_advisor = 0; // Nikolai Kondratiev
-Q.breshkovskaya_advisor = 0; //Catherine Breshko-Breshkovskaya
-// center-sr
-Q.chernov_advisor = 0; // Viktor Chernov - April week 1
-Q.gots_advisor = 0; // Abram Gots
-Q.zenzinov_advisor = 1; // Vladimir Zenzinov
-// left-sr
-Q.spiridonova_advisor = 0; // Maria Spiridonova
-Q.natanson_advisor = 0; // Mark Natanson
-Q.kamkov_advisor = 0; // Boris Kamkov
+// right
+// center
+// left
 // popular socialists, trudoviks, and other right-SR-aligned figures
-Q.kerensky_advisor = 1;
 
 
 // PNI advisors
-// right-kadet
-Q.milyukov_advisor = 1; // Pavel Milyukov
-Q.panina_advisor = 1; // Sofia Panina
-Q.shingarev_advisor = 1; // Andrey Shingarev
+// right
 // left-kadet
-Q.nekrasov_advisor = 1; // Nikolai Nekrasov
-Q.oldenburg_advisor = 0; // Sergey Oldenburg
-// Kadet-aligned liberals
-Q.lvov_advisor = 0; // Prince Georgy Lvov
-Q.tereshchenko_advisor = 1; // Mikhail Tereshchenko
-// Kadet-aligned conservatives
-Q.rodzianko_advisor = 0; // Mikhail Rodzianko
+// Independent
+// Self-destruct
+
 
 // PKI advisors
-Q.stasova_advisor = 1; // Aidit
-Q.shliapnikov_advisor = 1; // hmm
-Q.lenin_advisor = 0; // Vladimir Lenin - April week 1
+Q.stasova_advisor = 0; // Aidit
+Q.shliapnikov_advisor = 0; // hmm
 
 // Records of stats
 Q.KNIP_support_records = [];
