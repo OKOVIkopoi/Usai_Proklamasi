@@ -20,7 +20,7 @@ if (Q.Masyumi_in_gov) {
 if (Q.PKI_in_gov) {
     Q.governing_parties.push("PKI");
 }
-Q.governing_parties_str = Q.governing_parties.join(", ");
+Q.governing_parties_member = Q.governing_parties.join(", ");
 
 // This shall be KNIP or smth like that.
 
@@ -29,7 +29,7 @@ Q.inflation_disp = Q.inflation.toFixed(1);
 Q.unemployed_disp = Q.unemployed.toFixed(1);
 !}
 
-= [+ player_party_name +] Status
+= [+ player_party +] Status
 
 Week [+ week +], [+ month : month +] [+ year +]
 
@@ -53,7 +53,7 @@ Internal dissent:
 
 President: [+ now_president +] ([+ president_party +])
 
-Parties in government: [+ governing_parties_str +]
+Parties in government: [+ governing_parties_member +]
 
 Budget: [+ budget +]
 
@@ -166,7 +166,7 @@ switch (Q.player_party) {
 
 W I P.
 
-= YOUR Party Positions
+= Your Party Positions
 
 Current Government policy: WIPPP
 
