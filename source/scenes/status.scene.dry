@@ -2,7 +2,7 @@ title: Status
 new-page: true
 is-special: true
 on-arrival: {!
-Q.governing_parties = [];
+Q.governing_parties_member = [];
 if (Q.PPKI_in_gov) {
     Q.governing_parties.push("PPKI");
 }
