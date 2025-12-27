@@ -22,9 +22,6 @@ Q.governing_parties_member = Q.governing_parties_member.join(", ");
 
 // This shall be KNIP or smth like that.
 
-Q.monthly_inflation_disp = Q.monthly_inflation.toFixed(1);
-Q.inflation_disp = Q.inflation.toFixed(1);
-Q.unemployed_disp = Q.unemployed.toFixed(1);
 !}
 
 = [+ player_party +] Status
