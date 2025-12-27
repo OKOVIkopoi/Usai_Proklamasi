@@ -2,8 +2,6 @@ title: Status
 new-page: true
 is-special: true
 on-arrival: {!
-
-// TODO: create a list of governing parties
 Q.governing_parties = [];
 if (Q.PPKI_in_gov) {
     Q.governing_parties.push("PPKI");
@@ -79,14 +77,14 @@ Others:
 
 War progress:
 
-War weariness: [+ war_weariness : war_weariness +]
+War weariness: [+ war_weariness +]
 
 Societal unrest:
 
 = General Economy
 
 # Real income (% of ..WIP):
-Monthly inflation: [+ monthly_inflation +]% ([+ inflation +]% annually)
+Monthly inflation: 0% ([+ inflation +]% annually)
 
 Hunger: [+ hunger : hunger +]
 
