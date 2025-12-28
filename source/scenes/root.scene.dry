@@ -153,7 +153,7 @@ Q.PPKI_war_policy = 1;
 // rural policy is actually two different things: how farming should be done (communal, private, collective, state-owned) and what should be done with large estates/state property (no change, voluntary sale, compensated seizures, uncompensated seizures)
 // agricultural policy: -1 = Stolypin privatization, 0 = voluntary privatization, 1 = communal farming, 2 = state farming, 3 = collective farming
 // land policy: -2 = no policy, -1 = no change, 0 = voluntary sales, 1 = compensated seizures, 2 = uncompensated seizures
-Q.PPKO_land_policy = -2;
+Q.PPKI_land_policy = -2;
 Q.PPKI_agricultural_policy = -2;
 // nationality policies:
 // 0 = russian unity, 1 = national personal autonomy, 2 = federalism, 3 = self-determination
@@ -305,7 +305,7 @@ Q.industry = 0;
 // source: uh (WIP)
 // preparing for the War, train usage would dlikely be higher for the military
 Q.military_trains = 40;
-// civilians should be divided into industrial ,passenger, etc.
+// civilians should be divided into blablabla.
 Q.civilian_trains = 60;
 // total train capacity in 1945: WIP (cite: above)
 // 1 pood = 16.38 kg
@@ -343,7 +343,7 @@ Q.food_production = 134000; // in millions of kg of grain-equivalent
 Q.food_sold = 0.08; // fraction of food production that reaches the civilian population in the cities
 // food consumed by the military
 Q.food_requisitioned = 0.08;
-// millions of kg consumed by civilians per year (TODO)
+// millions of kg consumed by civilians per year (TODO, Aucchen wow I applaud for that dedication)
 // population: 145,449,000 (Table A8, Column M of WIP link source)
 // estimate: 1 urban civilian requires 1 kg of grain-equivalent/day (ration is 1 kg of bread according to various sources) - minimal sustenance
 // round up to 500 kg/year for "demand"
@@ -356,11 +356,7 @@ Q.urban_population = 145000000*(20)/100;
 Q.rural_population = 145000000*(72)/100;
 Q.soldiers_population = 145000000*(8)/100;
 // These are basic demands
-Q.food_demand_urban = Q.urban_population*500/1000000;// in million kg/year
-Q.food_demand_rural = Q.rural_population*500/1000000; // million kg/year - minimal demand; lower than this would provoke famine/violence
-Q.food_demand_military = Q.soldiers_population*700/1000000; // million kg/year
 // if food demand is higher than food_production*food_sold, then there will be an urban famine/urban hunger.
-
 // hunger is the % of food consumption that isn't satisfied.
 Q.food_supply_urban = Q.food_production*Q.food_sold;
 Q.food_transport_capacity = Q.train_capacity*Q.civilian_trains*0.15/100;
@@ -375,22 +371,6 @@ if (Q.hunger < 0) {
 Q.food_demand_urban = Math.round(Q.food_demand_urban);
 Q.food_supply_urban = Math.round(Q.food_supply_urban);
 Q.hunger = Math.round(Q.hunger);
-// rural hunger
-Q.food_supply_rural = Q.food_production*(1 - Q.food_sold)*(1 - Q.food_requisitioned);
-Q.rural_hunger = 100*(Q.food_demand_rural - Q.food_supply_rural)/Q.food_demand_rural;
-if (Q.rural_hunger < 0) {
-    Q.rural_hunger = 0;
-}
-// soldier hunger
-Q.food_supply_soldier = Q.food_production*Q.food_requisitioned;
-Q.food_transport_capacity_soldier = Q.train_capacity*Q.military_trains*0.15/100;
-if (Q.food_supply_soldier > Q.food_transport_capacity_soldier) {
-    Q.food_supply_soldier = Q.food_transport_capacity_soldier;
-}
-Q.soldier_hunger = 100*(Q.food_demand_military - Q.food_supply_soldier)/Q.food_demand_military;
-if (Q.soldier_hunger < 0) {
-    Q.soldier_hunger = 0;
-}
 
 // military goods production = Q.industry * Q.military_industry/100
 
@@ -466,7 +446,7 @@ Q.discipline = 0.5;
 // military leadership
 
 // War weariness is between 0 and 100
-Q.war_weariness = 40;
+Q.war_weariness = 50;
 // supply quality is based on military industry
 Q.supply_quality = 0.5;
 // morale is used in defense. between 0 and 1
