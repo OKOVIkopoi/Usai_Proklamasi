@@ -1,6 +1,28 @@
 title: Status
 new-page: true
 is-special: true
+on-arrival: {!
+Q.governing_parties_member = [];
+if (Q.Masyumi_in_gov) {
+    Q.governing_parties_member.push("Masyumi");
+}
+if (Q.PPKI_in_gov) {
+    Q.governing_parties_member.push("PPKI");
+}
+if (Q.PNI_in_gov) {
+    Q.governing_parties_member.push("PNI");
+}
+if (Q.Paras_in_gov) {
+    Q.governing_parties_member.push("Paras");
+}
+if (Q.PKI_in_gov) {
+    Q.governing_parties_member.push("PKI");
+}
+Q.governing_parties = Q.governing_parties_member.join(", ");
+
+// This shall be KNIP or smth like that.
+
+!}
 
 = [+ player_party +] Status
 
@@ -23,11 +45,11 @@ WIP
 
 President: [+ now_president +] ([+ president_party +])
 
-Parties in government: WIP, this thingy is bugging
+Parties in government: [+ governing_parties +]
 
 Budget: [+ budget +]
 
-// KNIP smth elections or other 'body' elections.
+# KNIP smth elections or other 'body' elections.
 
 = Central Indonesian National Committee
 
@@ -42,8 +64,6 @@ PKI:
 PNI: 
 PPKI:
 Others: 
-
-//HMMM
 
 = Peace
 
