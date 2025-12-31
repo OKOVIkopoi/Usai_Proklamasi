@@ -62,7 +62,7 @@ Hunger: WIP
 
 Unemployment: [+ unemployed +]%
 
-Labor unrest: W I P
+Labor unrest: [+ labor_unrest : war_weariness +]
 
 
 
