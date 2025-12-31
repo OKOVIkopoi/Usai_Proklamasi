@@ -34,11 +34,7 @@ Party resources available:
 W I P
 
 Internal dissent:
-[? if player_party == "PKI": [+ PKI_dissent_percent : dissent +] ?]
-[? if player_party == "Masyumi": [+ Masyumi_dissent_percent : dissent +] ?]
-[? if player_party == "PNI": [+ PNI_dissent_percent : dissent +] ?]
-[? if player_party == "Paras": [+ Paras_dissent_percent : dissent +] ?]
-[? if player_party == "PPKI": [+ PPKI_dissent_percent : dissent +] ?]
+WIP 
 
 = [+ government_form : government_form +]
 
