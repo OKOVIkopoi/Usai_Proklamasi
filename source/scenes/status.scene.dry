@@ -1,7 +1,6 @@
 title: Status
 new-page: true
 is-special: true
-on-arrival:
 
 = [+ player_party +] Status
 
