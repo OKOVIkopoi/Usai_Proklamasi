@@ -57,7 +57,7 @@ Q.n_players = 1;
 // the player ID of the next player
 Q.next_player = 0;
 
-Q.player1_party = "Test";
+Q.player1_party = "Zero";
 Q.player2_party = "";
 Q.player3_party = "";
 Q.player4_party = "";
