@@ -9,7 +9,12 @@ Week [+ week +], [+ month : month +] [+ year +]
 Position: W I P
 
 Party resources available:
-W I P
+[? if player_party == "PKI": [+ PKI_resources +] ?]
+[? if player_party == "Masyumi": [+ Masyumi_resources +] ?]
+[? if player_party == "PNI": [+ PNI_resources +] ?]
+[? if player_party == "Paras": [+ Paras_resources +] ?]
+[? if player_party == "PPKI": [+ PPKI_resources +] ?]
+[? if player_party == "Zero": Boom ?]
 
 Internal dissent:
 WIP 
@@ -44,7 +49,7 @@ Others:
 
 War progress:
 
-War weariness: [+ war_weariness +]
+War weariness: [+ war_weariness : war_weariness +]
 
 Societal unrest:
 
