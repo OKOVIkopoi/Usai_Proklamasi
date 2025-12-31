@@ -31,11 +31,7 @@ Week [+ week +], [+ month : month +] [+ year +]
 Position: W I P
 
 Party resources available:
-[? if player_party == "PKI": [+ PKI_resources +] ?]
-[? if player_party == "Masyumi": [+ Masyumi_resources +] ?]
-[? if player_party == "PNI": [+ PNI_resources +] ?]
-[? if player_party == "Paras": [+ Paras_resources +] ?]
-[? if player_party == "PPKI": [+ PPKI_resources +] ?]
+W I P
 
 Internal dissent:
 [? if player_party == "PKI": [+ PKI_dissent_percent : dissent +] ?]
