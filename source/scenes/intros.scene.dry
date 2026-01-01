@@ -125,14 +125,12 @@ beeep WIP.
 @PerangKemerdekaan_government
 title: A Government
 view-if: pg_seen < n_players
-go-to: pg_Masyumi if player_party = "Masyumi"; pg_PPKI if player_party = "PPKI"; pg_PNI if player_party= "PNI"; pg_Paras if player_party = "Paras"; pg_PKI if player_party = "PKI";
+go-to: pg_Masyumi if player_party = "Masyumi"; pg_PPKI if player_party = "PPKI"; pg_PNI if player_party= "PNI"; pg_Paras if player_party = "Paras"; pg_PKI if player_party = "PKI"
 on-arrival: pg_seen += 1
 
 = The New Government
 
-WIP just.
-
-Just WIP.
+WIP just. WIP.
 
 @pg_Masyumi
 go-to: dual_gov
