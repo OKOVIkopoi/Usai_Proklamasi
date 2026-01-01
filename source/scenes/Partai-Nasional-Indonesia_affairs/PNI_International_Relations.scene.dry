@@ -11,5 +11,12 @@ tags: PNI_party
 
 WIP...
 
-- @post_event: Bruh.
+- @welp
 - @easy_discard
+
+@welp
+title: So... welp.
+on-arrival: m_sr_relation += ipr_change*(1-m_dissent); m_resources -= 1;
+subtitle: Don't worry, it's being worked on!
+
+Anyway..
