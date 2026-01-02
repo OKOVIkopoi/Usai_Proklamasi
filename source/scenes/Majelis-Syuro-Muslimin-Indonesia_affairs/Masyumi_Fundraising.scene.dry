@@ -20,7 +20,7 @@ subtitle: [+ Masyumi_dues + 1 +] resources gained. [? if m_dues >= 4 : Dues are 
 on-arrival: Masyumi_dues += 1; Masyumi_resources += Masyumi_dues;
 view-if: Masyumi_dues <= 1000
 
-We have increased the dues.
+The dues have increased.
 
 @maintain_dues
 subtitle: [+ Masyumi_dues +] resources gained. [? if Masyumi_dues = 0 : So nothing got, I guess. ?]
@@ -28,9 +28,9 @@ on-arrival: Masyumi_resources += Masyumi_dues;
 
 We maintain our current dues.
 
-@decrease_dues
+@reduce_dues
 subtitle: [+ Masyumi_dues - 1 +] resources gained. [? if Masyumi_dues <= 0 : I suppose we are losing money instead. ?]
 on-arrival: Masyumi_dues -= 1; Masyumi_resources += Masyumi_dues;
 view-if: Masyumi_dues <= -1000
 
-We have decreased the dues.
+We have reduced the dues.
