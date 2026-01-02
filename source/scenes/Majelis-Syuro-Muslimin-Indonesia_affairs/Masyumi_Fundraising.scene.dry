@@ -31,6 +31,6 @@ We maintain our current dues.
 @reduce_dues
 subtitle: [+ Masyumi_dues - 1 +] resources gained. [? if Masyumi_dues <= 0 : I suppose we are losing money instead. ?]
 on-arrival: Masyumi_dues -= 1; Masyumi_resources += Masyumi_dues;
-choose-if: Masyumi_dues <= -1000
+choose-if: Masyumi_dues >= -1000
 
 We have reduced the dues.
