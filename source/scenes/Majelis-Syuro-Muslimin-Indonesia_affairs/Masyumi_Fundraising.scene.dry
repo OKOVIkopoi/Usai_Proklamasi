@@ -1,0 +1,36 @@
+title: Fundraising
+new-page: true
+view-if: Masyumi_Fundraising_timer <= 0
+on-arrival: Masyumi_Fundraising_timer += 4; week_actions += 1
+frequency: 100
+is-card: true
+card-image: img/ blank
+tags: Masyumi_party
+
+= Fundraising
+
+For better or for worse, the organization cannot exist without money.
+
+- @increase_dues: Increase dues.
+- @maintain_dues: Maintain our current dues.
+- @reduce_dues: Reduce dues.
+
+@increase_dues
+subtitle: [+ Masyumi_dues + 1 +] resources gained. [? if m_dues >= 4 : Dues are already rather high; increasing them might reduce our membership. ?]
+on-arrival: Masyumi_dues += 1; Masyumi_resources += Masyumi_dues;
+view-if: Masyumi_dues <= 1000
+
+We have increased the dues.
+
+@maintain_dues
+subtitle: [+ Masyumi_dues +] resources gained. [? if Masyumi_dues = 0 : So nothing got, I guess. ?]
+on-arrival: Masyumi_resources += Masyumi_dues;
+
+We maintain our current dues.
+
+@decrease_dues
+subtitle: [+ Masyumi_dues - 1 +] resources gained. [? if Masyumi_dues <= 0 : I suppose we are losing money instead. ?]
+on-arrival: Masyumi_dues -= 1; Masyumi_resources += Masyumi_dues;
+view-if: Masyumi_dues <= -1000
+
+We have decreased the dues.
