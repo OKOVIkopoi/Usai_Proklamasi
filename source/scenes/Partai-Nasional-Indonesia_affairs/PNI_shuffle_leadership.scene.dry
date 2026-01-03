@@ -24,7 +24,7 @@ tags: PNI_nonfactional
 frequency: 1
 
 - #PNI_RM_advisor
-- @add_advisors: Add advisors instead.
+- @PNI_add_advisors: Add advisors instead.
 
 @remove_none
 title: Stop changing advisors.
@@ -50,7 +50,7 @@ frequency: 1
 #################################### removing advisors
 
 @add_sukarno
-title:Add Sukarno
+title: Add Sukarno
 view-if: sukarno_advisor = 0
 on-arrival: sukarno_advisor = 1; PNI_n_advisors +=1
 go-to: PNI_advisor_menu
