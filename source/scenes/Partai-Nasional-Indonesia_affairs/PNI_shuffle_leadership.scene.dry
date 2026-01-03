@@ -14,7 +14,7 @@ changing the leadership of the party might be necessary to adapt to the changing
 Removing advisors will increase dissent from their faction of the party, while selecting advisors will increase a faction's strength.
 
 - @RM_main: Remove advisors.
-- @add_advisors: Add advisors.
+- @PNI_add_advisors: Add advisors.
 - @root: Don't change the party leadership.
 - @easy_discard
 
@@ -24,7 +24,7 @@ tags: PNI_nonfactional
 frequency: 1
 
 - #PNI_RM_advisor
-- @add_advisors: Add advisors.
+- @add_advisors: Add advisors instead.
 
 @remove_none
 title: Stop changing advisors.
@@ -32,27 +32,36 @@ go-to: root
 tags: PNI_RM_advisor
 
 
-@add_advisors
+@PNI_add_advisors
 title: Add advisors
 unavailable-subtitle: Maximum of [+ max_advisors +] advisors.
 choose-if: PNI_n_advisors < max_advisors
-go-to: advisor_menu
+go-to: PNI_advisor_menu
 
-@advisor_menu
+@PNI_advisor_menu
 title: Add other advisors.
 tags: PNI_nonfactional
 frequency: 1
 
+- @add_sukarno
 - @RM_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
 
 #################################### removing advisors
 
+@add_sukarno
+title:Add Sukarno
+view-if: sukarno_advisor = 0
+on-arrival: sukarno_advisor = 1; PNI_n_advisors +=1
+go-to: PNI_advisor_menu
+
+Sukarno has been added as an advisor.
+
 @remove_sukarno
 title: Remove Sukarno
 view-if: sukarno_advisor = 1
 unavailable-subtitle:WIPping
-on-arrival: Sukarno_advisor = 0; PNI_n_advisors -= 1
+on-arrival: sukarno_advisor = 0; PNI_n_advisors -= 1
 tags: PNI_RM_advisor
 go-to: RM_main
 
