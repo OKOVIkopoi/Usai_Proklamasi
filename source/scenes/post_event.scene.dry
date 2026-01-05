@@ -176,8 +176,7 @@ if (Q.soldier_hunger < 0) {
     Q.soldier_hunger = 0; 
 }
 
-
-// 1. update dates
+//1. Dates, Time managing
 if (Q.week_actions >= 1 && Q.current_player >= Q.n_players) {
     Q.week_actions = 0;
     Q.time += 1;
