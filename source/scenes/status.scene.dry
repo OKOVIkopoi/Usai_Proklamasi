@@ -84,6 +84,7 @@ Unemployment: [+ unemployed +]%
 
 Labor unrest: [+ labor_unrest : war_weariness +]
 
+Debugging: [+ week_actions +]
 
 
 
