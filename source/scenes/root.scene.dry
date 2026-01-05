@@ -22,7 +22,7 @@ go-to: start_menu_2
 on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
-Q.time = 3;
+Q.time = 1;
 Q.year = 1945;
 Q.month = 8;
 Q.week = 3;
@@ -52,7 +52,7 @@ Q.player_in_gov = 0;
 Q.player_in_KNIP = 0;
 
 // multiplayer stuff
-Q.current_player = 1;
+Q.current_player = 2;
 Q.n_players = 1;
 // the player ID of the next player
 Q.next_player = 0;
