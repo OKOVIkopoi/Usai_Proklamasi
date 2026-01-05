@@ -546,16 +546,7 @@ if (Q.player_party == "Masyumi") {
     Q.player_in_KNIP = Q.PKI_in_KNIP;
 }
 !}
-on-departure: {!
-// TODO: set historical/international events
-if (Q.month == 10 && Q.week == 1) {
-    Q.historical_event = "WIP - Work in Progress.";
-} else if (Q.year == 2000 && Q.month == 4 && Q.week == 3) {
-    Q.historical_event = "The WIP - Work in Progrsss.";
-} else {
-    Q.historical_event = 0;
-}
-!}
+
 go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty = 0; main.main_easy if has_event = 0 and difficulty < 0; main.main_hard if has_event = 0 and difficulty > 0
 
 = Week [+ week +], [+ month : month +] [+ year +]
