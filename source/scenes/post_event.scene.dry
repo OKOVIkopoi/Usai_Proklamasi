@@ -189,7 +189,7 @@ if (Q.week_actions >= 1 && Q.current_player >= Q.n_players) {
     if (Q.month >= 13) {
         Q.month = 1;
         Q.year += 1;
-    }
+    }}
     // TODO: update records
     if (Q.time > 0) {
         var party_support_results = {'date': new Date(Q.year, Q.month - 1, 1+Q.week*7)};
