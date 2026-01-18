@@ -98,7 +98,7 @@ view-if: player_party = "PPKI"
 
 @party_PNI
 title: Party Affairs
-card-image: img/ blank
+card-image: img/Uncolored_Logo_PNI.jpg
 is-deck: true
 view-if: player_party = "PNI"
 
