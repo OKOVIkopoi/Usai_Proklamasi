@@ -692,7 +692,7 @@ Q.timers = [//Masyumi_party
             'Paras_enemies', 'Paras_fundraising', 'Paras_ideology',
             'Paras_inter_party_relationships', 'Paras_media',
             'Paras_organizing', 'Paras_party_unity', 'Paras_shuffle_leadership',
-            'Paras_international', 'Paras_war_policy', 'Paras_industrial_policy',
+            'Paras_International_Relations', 'Paras_war_policy', 'Paras_industrial_policy',
             //PKI_party
             'PKI_enemies', 'PKI_fundraising', 'PKI_ideology',
             'PKI_inter_party_relationships', 'PKI_media',
