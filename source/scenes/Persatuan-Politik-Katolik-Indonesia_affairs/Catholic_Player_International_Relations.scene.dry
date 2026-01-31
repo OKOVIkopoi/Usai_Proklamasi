@@ -1,11 +1,11 @@
 title: International Relations
 new-page: true
-view-if: PPKI_ideology_timer <= 0 and player_party= "PPKI"
-on-arrival: PPKI_ideology_timer += 1; week_actions += 1
+view-if: Catholic_Player_ideology_timer <= 0 and player_party= "null"
+on-arrival: Catholic_Player_ideology_timer += 1; week_actions += 1
 frequency: 100
 is-card: true
 card-image: img/ blank
-tags: PPKI_pol
+tags: Catholic_Player_pol
 
 = International Relations
 
@@ -19,8 +19,8 @@ So do we want to begin forming relationship with the International community?
 
 @Improve_Vatican
 title: Improve our relations with the Holy See and Pope instead
-on-arrival: k_resources -= 1;
-choose-if: k_resources >= 1
+on-arrival: Catholic_Player_resources -= 1;
+choose-if: Catholic_Player_resources >= 1
 subtitle: -1 resource
 
 Right.. of course!
