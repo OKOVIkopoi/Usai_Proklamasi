@@ -17,7 +17,7 @@ max-cards: 4
 
 
 - @party_Masyumi
-- @party_PPKI
+- @party_Catholic_Player
 - @party_PNI
 - @party_Paras
 - @party_PKI
@@ -44,7 +44,7 @@ max-cards: 5
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
 - @party_Masyumi
-- @party_PPKI
+- @party_Catholic_Player
 - @party_PNI
 - @party_Paras
 - @party_PKI
@@ -71,7 +71,7 @@ max-cards: 3
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
 - @party_Masyumi
-- @party_PPKI
+- @party_Catholic_Player
 - @party_PNI
 - @party_Paras
 - @party_PKI
@@ -88,13 +88,13 @@ view-if: player_party = "Masyumi"
 
 - #Masyumi_party
 
-@party_PPKI
+@party_Catholic_Player
 title: Party Affairs
 card-image: img/ blank
 is-deck: true
-view-if: player_party = "PPKI"
+view-if: player_party = "uhhhcudjenf"
 
-- #PPKI_pol
+- #Catholic_Player_pol
 
 @party_PNI
 title: Party Affairs
