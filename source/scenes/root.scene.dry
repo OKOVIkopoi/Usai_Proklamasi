@@ -37,7 +37,7 @@ Q.historical_mode = 0;
 Q.player_party_name = "Zero";
 Q.player_party = "Zero";
 Q.party_name_map = {"Masyumi": "Majelis Syuro Muslimin Indonesia",
-        [+ Catholic_Player_naming +]: "This might be some coding if and else alike",
+        "[+ Catholic_Player_naming +]": "This might be some coding if and else alike",
         "PNI": "Partai Nasional Indonesia",
         "Paras": "Partai Rakyat Sosialis",
         "PKI": "Partai Komunis Indonesia"};
