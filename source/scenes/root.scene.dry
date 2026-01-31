@@ -37,13 +37,13 @@ Q.historical_mode = 0;
 Q.player_party_name = "Zero";
 Q.player_party = "Zero";
 Q.party_name_map = {"Masyumi": "Majelis Syuro Muslimin Indonesia",
-        "PPKI": "Persatuan Politik Katolik Indonesia",
+        "[+ Catholic_Player_naming +]": "This might be some coding if and else alike",
         "PNI": "Partai Nasional Indonesia",
         "Paras": "Partai Rakyat Sosialis",
         "PKI": "Partai Komunis Indonesia"};
 
 Q.Masyumi_is_player = 0;
-Q.PPKI_is_player = 0;
+Q.Catholic_Player_is_player = 0;
 Q.PNI_is_player = 0;
 Q.Paras_is_player = 0;
 Q.PKI_is_player = 0;
@@ -64,13 +64,13 @@ Q.player4_party = "";
 
 // party resources
 Q.Masyumi_resources = 2;
-Q.PPKI_resources = 2;
+Q.Catholic_Player_resources = 2;
 Q.PNI_resources = 3;
 Q.Paras_resources = 1;
 Q.PKI_resources = 1;
 // party dues
 Q.Masyumi_dues = 2;
-Q.PPKI_dues = 2;
+Q.Catholic_Player_dues = 2;
 Q.PNI_dues = 2;
 Q.Paras_dues = 1;
 Q.PKI_dues = 3;
@@ -79,19 +79,19 @@ Q.PKI_dues = 3;
 // dissent thresholds for party split
 // (this could be different between left and right factions, which will be done in the individual scenes.)
 Q.Masyumi_split_threshold = 55;
-Q.PPKI_split_threshold = 55;
+Q.Catholic_Player_split_threshold = 55;
 Q.PNI_split_threshold = 55;
 Q.Paras_split_threshold = 55;
 Q.PKI_split_threshold = 60;
 // strength changes on supporting uh... WIP
 Q.Masyumi_support_change = 6;
-Q.PPKI_support_change = 6;
+Q.Catholic_Player_support_change = 6;
 Q.PNI_support_change = 6;
 Q.Paras_support_change = 6;
 Q.PKI_support_change = 8;
 // dissent reduction on party_disunity
 Q.Masyumi_discipline_change = 5;
-Q.PPKI_discipline_change = 5;
+Q.Catholic_Player_discipline_change = 5;
 Q.PNI_discipline_change = 5;
 Q.Paras_discipline_change = 5;
 Q.PKI_discipline_change = 6;
@@ -104,8 +104,8 @@ Q.ipr_change = 6;
 // overall dissent reduces every increase in party support.
 Q.Masyumi_dissent = 0.05;
 Q.Masyumi_dissent_percent = 5;
-Q.PPKI_dissent = 0.1;
-Q.PPKI_dissent_percent = 10;
+Q.Catholic_Player_dissent = 0.1;
+Q.Catholic_Player_dissent_percent = 10;
 Q.PNI_dissent = 0.05;
 Q.PNI_dissent_percent = 5;
 Q.Paras_dissent = 0.05;
@@ -139,32 +139,30 @@ Q.Masyumi_nationality_policy = 2;
 Q.Masyumi_workers_org = 1;
 Q.Masyumi_soldiers_org = 1;
 
-// PPKI or PKRI or PK internals
-Q.PPKI_factions = ['social_patriot', 'defensist', 'internationalist'];
+// PPKI or PKRI or PK internals - now unified under the 'Dynamic' naming
+Q.Catholic_Player_factions = ['social_patriot', 'defensist', 'internationalist'];
 // unity is WIP
 // leader- WIP
 // unknown = 0, unknown = 1
-Q.PPKI_leadership = 0;
-// taking a nonaligned position...
-Q.PPKI_independent = 0;
+Q.Catholic_Player_leadership = 0;
 // -1 = expansionist, 0 = social patriot, 1 = revolutionary defensist, 2 = internationalist, 3 = revolutionary defeatist
 // less is more pro-war <-I wanna comment but nvm
-Q.PPKI_war_policy = 1;
+Q.Catholic_Player_war_policy = 1;
 // rural policy is actually two different things: how farming should be done (communal, private, collective, state-owned) and what should be done with large estates/state property (no change, voluntary sale, compensated seizures, uncompensated seizures)
 // agricultural policy: -1 = Stolypin privatization, 0 = voluntary privatization, 1 = communal farming, 2 = state farming, 3 = collective farming
 // land policy: -2 = no policy, -1 = no change, 0 = voluntary sales, 1 = compensated seizures, 2 = uncompensated seizures
-Q.PPKI_land_policy = -2;
-Q.PPKI_agricultural_policy = -2;
+Q.Catholic_Player_land_policy = -2;
+Q.Catholic_Player_agricultural_policy = -2;
 // nationality policies:
 // 0 = russian unity, 1 = national personal autonomy, 2 = federalism, 3 = self-determination
-Q.PPKI_nationality_policy = 1;
+Q.Catholic_Player_nationality_policy = 1;
 // -1 = laissez-faire, 0 = trade unions, 1 = worker supervision, 2 = syndicalism, 3 = state ownership
 // more is more left-wing
-Q.PPKI_industrial_policy = 0;
+Q.Catholic_Player_industrial_policy = 0;
 // -1 = liberal coalition, 0 = democratic coalition, 1 = external support, 2 = opposition, 3 = socialist coalition, 4 = armed overthrow
-Q.PPKI_prov_gov_policy = 1;
-Q.PPKI_workers_org = 1;
-Q.PPKI_soldiers_org = 0;
+Q.Catholic_Player_prov_gov_policy = 1;
+Q.Catholic_Player_workers_org = 1;
+Q.Catholic_Player_soldiers_org = 0;
 
 // PNI internals
 // PNI leadership is wippp
@@ -210,12 +208,12 @@ Q.Paras_nationality_policy = 0;
 
 // inter-party relations
 // Roughly I think it's like this.
-Q.Masyumi_PPKI_relation = 40;
+Q.Masyumi_Catholic_Player_relation = 40;
 Q.Masyumi_PNI_relation = 55;
 Q.Masyumi_Paras_relation = 40;
-Q.PPKI_PNI_relation = 40;
-Q.PPKI_Paras_relation = 35;
-Q.PPKI_PKI_relation = 20;
+Q.Catholic_Player_PNI_relation = 40;
+Q.Catholic_Player_Paras_relation = 35;
+Q.Catholic_Player_PKI_relation = 20;
 Q.PKI_Masyumi_relation = 25;
 Q.PKI_PNI_relation = 20;
 Q.PKI_Paras_relation = 16;
@@ -378,7 +376,7 @@ Q.hunger = Math.round(Q.hunger);
 // party names, hm yeah those
 // governments don't necessarily have to be the whatever government right now
 Q.Masyumi_in_gov = 0;
-Q.PPKI_in_gov = 0;
+Q.Catholic_Player_in_gov = 0;
 Q.PNI_in_gov = 0;
 Q.Paras_in_gov = 0;
 Q.PKI_in_gov = 0;
@@ -409,7 +407,7 @@ Q.PKI_coalition_dissent = 0;
 //////////////////////// KNIP
 // parties in it
 Q.Masyumi_in_KNIP = 0;
-Q.PPKI_in_KNIP = 0;
+Q.Catholic_Player_in_KNIP = 0;
 Q.PNI_in_KNIP = 0;
 Q.Paras_in_KNIP = 0;
 Q.PKI_in_KNIP = 0;
@@ -530,7 +528,7 @@ Q.workers_militia_strength = 20;
 Q.workers_militia_militancy = 0.5;
 // basicly loyalty, yes aucchen yes I understandd
 Q.workers_militia_Masyumi_loyalty = 25;
-Q.workers_militia_PPKI_loyalty = 0;
+Q.workers_militia_Catholic_Player_loyalty = 0;
 Q.workers_militia_PNI_loyalty = 25;
 Q.workers_militia_Paras_loyalty = 0;
 Q.workers_militia_PKI_loyalty = 50;
@@ -543,7 +541,7 @@ Q.paramilitaries_parties = ['Masyumi', 'PPKI', 'PNI', 'Paras', 'PKI'];
 Q.paramilitaries_strength = 0;
 Q.paramilitaries_militancy = 0;
 Q.paramilitaries_Masyumi_loyalty = 0;
-Q.paramilitaries_PPKI_loyalty = 0;
+Q.paramilitaries_Catholic_Player_loyalty = 0;
 Q.paramilitaries_PNI_loyalty = 0;
 Q.paramilitaries_Paras_loyalty = 0;
 Q.paramilitaries_PKI_loyalty = 0;
@@ -665,7 +663,7 @@ Q.elites_pro_KNIP = 0;
 
 // Advisors/Leaders
 Q.Masyumi_n_advisors = 3;
-Q.PPKI_n_advisors = 3;
+Q.Catholic_Player_n_advisors = 3;
 Q.PNI_n_advisors = 3;
 Q.Paras_n_advisors = 2;
 Q.PKI_n_advisors = 3;
@@ -679,12 +677,12 @@ Q.timers = [//Masyumi_party
             'Masyumi_reunify',
             'Masyumi_prov_gov_policy', 'Masyumi_industrial_policy',
             'Masyumi_war_policy',
-            //PPKI_party
-            'PPKI_enemies', 'PPKI_fundraising', 'PPKI_ideology',
-            'PPKI_prov_gov_policy', 'PPKI_industrial_policy',
-            'PPKI_war_policy', 'PPKI_rural_policy',
-            'PPKI_inter_party_relationships', 'PPKI_media',
-            'PPKI_organizing', 'PPKI_party_disunity', 'PPKI_shuffle_leadership',
+            //Catholicccc_party
+            'Catholic_Player_enemies', 'Catholic_Player_Fundraising', 'Catholic_Player_ideology',
+            'Catholic_Player_prov_gov_policy', 'Catholic_Player_industrial_policy',
+            'Catholic_Player_war_policy', 'Catholic_Player_rural_policy',
+            'Catholic_Player_inter_party_relationships', 'Catholic_Player_media',
+            'Catholic_Player_organizing', 'Catholic_Player_party_disunity', 'Catholic_Player_shuffle_leadership',
             //PNI_party
             'PNI_enemies', 'PNI_fundraising', 'PNI_ideology',
             'PNI_inter_party_relationships', 'PNI_media',
@@ -765,7 +763,7 @@ Q.chkheidze_advisor = 0; // Just for example, ofc not that man
 // right
 // center
 // left
-// popular socialists, trudoviks, and other right-SR-aligned figures
+// populist and other 'independent' figures
 
 
 // PNI advisors
@@ -804,7 +802,7 @@ Difficulty affects starting resources and inter-party relations, as well as how 
 
 @easy_mode
 title: Single Player (Easy)
-on-arrival: difficulty = -1; Masyumi_resources = 3; PPKI_resources = 4; PNI_resources = 4; Paras_resources = 2; PKI_dues = 4; PNI_split_threshold = 65; Masyumi_support_change = 10; PNI_support_change = 10; Masyumi_discipline_change = 8; PNI_discipline_change = 8; max_advisors = 5; ipr_change = 8; unrest_modifier = 1.6
+on-arrival: difficulty = -1; Masyumi_resources = 3; Catholic_Player_resources = 4; PNI_resources = 4; Paras_resources = 2; PKI_dues = 4; PNI_split_threshold = 65; Masyumi_support_change = 10; PNI_support_change = 10; Masyumi_discipline_change = 8; PNI_discipline_change = 8; max_advisors = 5; ipr_change = 8; unrest_modifier = 1.6
 go-to: party_selection
 
 Select a party:
@@ -818,7 +816,7 @@ Select a party:
 
 @hard_mode
 title: Single Player (Hard)
-on-arrival: difficulty = 1; Masyumi_resources = 1; PPKI_resources = 2; PNI_resources = 2; Paras_resources = 1; PKI_resources = 0; PKI_dues = 2; Masyumi_split_threshold = 50; PNI_split_threshold = 50; Masyumi_support_change = 5; PNI_support_change = 5; Masyumi_discipline_change = 4; PNI_discipline_change = 4; max_advisors = 3; ipr_change = 5; unrest_modifier = 0.7
+on-arrival: difficulty = 1; Masyumi_resources = 1; Catholic_Player_resources = 2; PNI_resources = 2; Paras_resources = 1; PKI_resources = 0; PKI_dues = 2; Masyumi_split_threshold = 50; PNI_split_threshold = 50; Masyumi_support_change = 5; PNI_support_change = 5; Masyumi_discipline_change = 4; PNI_discipline_change = 4; max_advisors = 3; ipr_change = 5; unrest_modifier = 0.7
 go-to: party_selection
 
 Select a party:
@@ -872,7 +870,7 @@ title: Indonesian Catholic Political Union (PPKI)
 - @party_selection: No, select a different party.
 
 @PPKI_2
-on-arrival: player_party_name = "Persatuan Politik Katolik Indonesia"; player_party = "PPKI"; PPKI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
+on-arrival: player_party_name = "[+ Catholic_Player_naming +]"; player_party = "[+ Catholic_Player_naming +]"; Catholic_Player_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
 go-to: intros
 
 
