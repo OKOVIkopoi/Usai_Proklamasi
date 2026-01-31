@@ -27,3 +27,10 @@ subtitle: [+ Paras_dues +] resources gained. [? if Paras_dues = 0 : So nothing g
 on-arrival: Paras_resources += Paras_dues;
 
 We maintain our current dues.
+
+@reduce_dues
+subtitle: [+ Paras_dues - 1 +] resources gained. [? if Paras_dues <= 0 : I suppose we are losing money instead. ?]
+on-arrival: Paras_dues -= 1; Paras_resources += Paras_dues;
+choose-if: Paras_dues >= -1000
+
+We have reduced the dues.
