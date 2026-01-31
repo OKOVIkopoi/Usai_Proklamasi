@@ -92,7 +92,7 @@ view-if: player_party = "Masyumi"
 title: Party Affairs
 card-image: img/ blank
 is-deck: true
-view-if: player_party = "uhhhcudjenf"
+view-if: player_party = "PPKI"
 
 - #Catholic_Player_pol
 
