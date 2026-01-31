@@ -1,0 +1,29 @@
+title: Fundraising
+new-page: true
+view-if: Paras_Fundraising_timer <= 0
+on-arrival: Paras_Fundraising_timer += 4; week_actions += 1
+frequency: 100
+is-card: true
+card-image: img/ blank
+tags: Paras_party
+
+= Fundraising
+
+For better or for worse, the party cannot exist without money.
+
+- @increase_dues: Increase dues.
+- @maintain_dues: Maintain our current dues.
+- @reduce_dues: Reduce dues.
+
+@increase_dues
+subtitle: [+ Paras_dues + 1 +] resources gained. [? if m_dues >= 4 : Dues are already rather high; increasing them might reduce our membership. ?]
+on-arrival: Paras_dues += 1; Paras_resources += Paras_dues;
+view-if: Paras_dues <= 1000
+
+The dues have increased.
+
+@maintain_dues
+subtitle: [+ Paras_dues +] resources gained. [? if Paras_dues = 0 : So nothing got, I guess. ?]
+on-arrival: Paras_resources += Paras_dues;
+
+We maintain our current dues.
