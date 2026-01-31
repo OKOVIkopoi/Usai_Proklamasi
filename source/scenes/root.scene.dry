@@ -37,7 +37,7 @@ Q.historical_mode = 0;
 Q.player_party_name = "Zero";
 Q.player_party = "Zero";
 Q.party_name_map = {"Masyumi": "Majelis Syuro Muslimin Indonesia",
-        "[+ Catholic_Player_naming +]": "This might be some coding if and else alike",
+        [+ Catholic_Player_naming +]: "This might be some coding if and else alike",
         "PNI": "Partai Nasional Indonesia",
         "Paras": "Partai Rakyat Sosialis",
         "PKI": "Partai Komunis Indonesia"};
@@ -870,7 +870,7 @@ title: Indonesian Catholic Political Union (PPKI)
 - @party_selection: No, select a different party.
 
 @PPKI_2
-on-arrival: player_party_name = "[+ Catholic_Player_naming +]"; player_party = "[+ Catholic_Player_naming +]"; Catholic_Player_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
+on-arrival: player_party_name = [+ Catholic_Player_naming +]; player_party = [+ Catholic_Player_naming +]; Catholic_Player_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
 go-to: intros
 
 
