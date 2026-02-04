@@ -106,7 +106,7 @@ The, WIP yes you guessed right.  [? if o1_points = 3: Bro. ?][? if o1_points < 3
 
 
 @o1_HI
-go-to: intro_menu
+go-to: o1_issue
 on-arrival: army_discipline -= 0.15; army_morale += 0.05; o1_points += 3;
 
 In respon... WIP.
@@ -114,7 +114,7 @@ In respon... WIP.
 The Communists, WIP.
 
 @o1_Think
-go-to: intro_menu
+go-to: o1_issue
 on-arrival: o1_points += 3;
 
 beep bop.
@@ -125,37 +125,18 @@ beeep WIP.
 @PerangKemerdekaan_government
 title: A Government
 view-if: pg_seen < n_players
-go-to: pg_Masyumi if player_party = "Masyumi"; pg_PPKI if player_party = "PPKI"; pg_PNI if player_party= "PNI"; pg_Paras if player_party = "Paras"; pg_PKI if player_party = "PKI"
+go-to: pg_new_gov
 on-arrival: pg_seen += 1
 
 = The New Government
 
 WIP just. WIP.
 
-@pg_Masyumi
+@pg_new_gov
 go-to: dual_gov
 
-The WIP.
-
-@pg_PPKI
-go-to: dual_gov
-
-The WIP.
-
-@pg_PNI
-go-to: dual_gov
-
-The WIP.
-
-@pg_Paras
-go-to: dual_gov
-
-The WIP.
-
-@pg_PKI
-go-to: dual_gov
-
-The WIP.
+See only this? That means you're indeed a natuonalist OR patriot, PNI but if not then the code--fix mode.
+[? if player_party = "PPKI":The new uh WIP, okay yeah I just testing things out. ?][? if player_party = "Masyumi": Just testing, the differentiation. ?][? if party_name = "Paras": Test 12345. Does this work? ?][? if party_name = "PKI": The said government is literally filled with former fascists associates. ?]
 
 @dual_gov
 go-to: intro_menu
