@@ -136,7 +136,8 @@ WIP just. WIP.
 go-to: dual_gov
 
 See only this? That means you're indeed a natuonalist OR patriot, PNI but if not then the code--fix mode.
-[? if player_party = "PPKI":The new uh WIP, okay yeah I just testing things out. ?][? if player_party = "Masyumi": Just testing, the differentiation. ?][? if party_name = "Paras": Test 12345. Does this work? ?][? if party_name = "PKI": The said government is literally filled with former fascists associates. ?]
+
+[? if player_party = "PPKI":The new uh WIP, okay yeah I just testing things out. Verified Catholic. ?][? if player_party = "Masyumi": Just testing, the differentiation. Verified Muslim. ?][? if party_name = "Paras": Test 12345. Does this work? ?][? if party_name = "PKI": The said government is literally filled with former fascists associates. Verified communist.  ?]
 
 @dual_gov
 go-to: intro_menu
