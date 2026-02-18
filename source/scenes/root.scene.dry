@@ -681,7 +681,7 @@ Q.timers = [//Masyumi_party
             'Catholic_Player_enemies', 'Catholic_Player_Fundraising', 'Catholic_Player_ideology',
             'Catholic_Player_prov_gov_policy', 'Catholic_Player_industrial_policy',
             'Catholic_Player_war_policy', 'Catholic_Player_rural_policy',
-            'Catholic_Player_inter_party_relationships', 'Catholic_Player_media',
+            'Catholic_Player_inter_party_relationships', 'Catholic_Player_International_Relations', 'Catholic_Player_media',
             'Catholic_Player_organizing', 'Catholic_Player_party_disunity', 'Catholic_Player_shuffle_leadership',
             //PNI_party
             'PNI_enemies', 'PNI_fundraising', 'PNI_ideology',
