@@ -1,7 +1,7 @@
 title: International Relations
 new-page: true
-view-if: Catholic_Player_ideology_timer <= 0 and player_party= "PPKI"
-on-arrival: Catholic_Player_ideology_timer += 1; week_actions += 1
+view-if: Catholic_Player_International_Relations_timer <= 0 and player_party= "PPKI"
+on-arrival: Catholic_Player_International_Relations_timer += 1; week_actions += 1
 frequency: 100
 is-card: true
 card-image: img/ blank
