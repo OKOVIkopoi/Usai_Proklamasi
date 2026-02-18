@@ -671,8 +671,8 @@ Q.PKI_n_advisors = 3;
 // let's just put all of the timers here...
 // most party affairs and government affairs cards are on a timer.
 Q.timers = [//Masyumi_party
-            'Masyumi_enemies', 'Masyumi_fundraising', 'Masyumi_ideology',
-            'Masyumi_inter_party_relationships', 'Masyumi_media',
+            'Masyumi_enemies', 'Masyumi_Fundraising', 'Masyumi_ideology',
+            'Masyumi_inter_party_relationships', 'Masyumi_International_Relations', 'Masyumi_media',
             'Masyumi_organizing', 'Masyumi_party_disunity', 'Masyumi_shuffle_leadership',
             'Masyumi_reunify',
             'Masyumi_prov_gov_policy', 'Masyumi_industrial_policy',
