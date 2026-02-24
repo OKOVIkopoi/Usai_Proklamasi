@@ -84,7 +84,7 @@ Unemployment: [+ unemployed +]%
 
 Labor unrest: [+ labor_unrest : war_weariness +]
 
-Debugging: [+ difficulty +] AND [+ Catholic_Player_naming +]
+Debugging: [+ difficulty +]
 
 
 
