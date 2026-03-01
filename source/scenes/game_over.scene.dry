@@ -16,7 +16,7 @@ if (Q.player_party != 'Masyumi','PPKI','PNI','Paras','PKI') {this.achieve('Testw
 
 @First_ever_achievemento
 title: First Ever Achhievment of This Mod
-view-if: Q.player_party !== 'Masyumi','PPKI','PNI','Paras','PKI'
+view-if: Q.player_party != 'Masyumi','PPKI','PNI','Paras','PKI'
 tags:endings
 go-to: eg_menu if started == 1; root.start_menu_2 if started == 0
 
