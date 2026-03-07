@@ -14,7 +14,7 @@ go-to: start_menu_2
 @start_menu_2
 
 - @start: Start game
-- @Election_Simulation
+- @Election_Simulation: Election simmus
 - @credits: Credits
 - @game_over.achievements
 
