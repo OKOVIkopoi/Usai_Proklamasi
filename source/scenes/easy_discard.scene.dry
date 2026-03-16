@@ -1,5 +1,5 @@
 title: Return card to hand.
-view-if: not last_advisor_action
+view-if: difficulty <= 0 and not last_advisor_action
 go-to: root
 on-arrival: {!
 Q.week_actions -= 1;
@@ -8,7 +8,7 @@ var card = this.state.lastPlayedCard;
 card.image = card.cardImage;
 if (Q.difficulty == 0) {
     this.state.currentHands['main'].push(card);
-} else if (Q.difficulty = 1) {
+} else if (Q.difficulty > 0) {
     this.state.currentHands['main.main_hard'].push(card);
 } else if (Q.difficulty < 0) {
     this.state.currentHands['main.main_easy'].push(card);
