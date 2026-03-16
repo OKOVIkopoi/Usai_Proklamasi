@@ -1,7 +1,7 @@
 title: International Relations
 new-page: true
-view-if: Paras_International-R_timer <= 0
-on-arrival: Paras_International-R_timer += 4; week_actions += 1
+view-if: Paras_International_Relations_timer <= 0
+on-arrival: Paras_International_Relations_timer += 4; week_actions += 1
 is-card: true
 card-image: img/ blank
 tags: Paras_party
