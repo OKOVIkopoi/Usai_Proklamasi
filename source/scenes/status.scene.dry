@@ -84,7 +84,7 @@ Unemployment: [+ unemployed +]%
 
 Labor unrest: [+ labor_unrest : war_weariness +]
 
-Debugging: [+ difficulty +]
+Debugging: [+ difficulty +] - [+ Paras_International-R_timer +] - [+ player_party +]
 
 
 
