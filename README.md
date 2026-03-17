@@ -1,5 +1,13 @@
 # Usai Proklamasi: Same or Different
 A (still under work) Mod of Autumn Chen/aucchen's [Social Democracy: Petrogad 1917](https://github.com/aucchen/petrograd_1917) game where you can play as any available party at the time of 1945, technically there's none which is why I'm working to put a spectator one that basicly lets you watch History as is until 'enough' parties spawn to be chosen by you or.. continue spectate.
+
+## 'Phases' of the Mod's Development
+1. 1945-1949/Later/Earlier, War of Independence Phase-also this is the same Phase where I'm still figuring the codes out imo.
+2. 1949/Later/Earlier-1959/Later/Earlier, Peace time governance and where you are actually being tested aroused.. As if the War was just smth tutorial blrblr.
+3. 1959/Later/Earlier-1967, It could be many things. I mean. This Mod is calculated to be indeed longer in gameplay's time than the average mod gameplay's time duh.
+
+Right now, the Mod is in number 1 or the 'War of Independence' Phase 
+
 ## Included Libraries
 
 [jquery v1.11.1](https://releases.jquery.com/)
