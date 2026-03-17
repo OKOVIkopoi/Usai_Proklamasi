@@ -686,7 +686,7 @@ Q.timers = [//Masyumi_party
             'Catholic_Player_organizing', 'Catholic_Player_party_disunity', 'Catholic_Player_shuffle_leadership',
             //PNI_party
             'PNI_enemies', 'PNI_fundraising', 'PNI_ideology',
-            'PNI_inter_party_relationships', 'PNI_media',
+            'PNI_inter_party_relationships', 'PNI_International_Relations', 'PNI_media',
             'PNI_organizing', 'PNI_party_disunity', 'PNI_shuffle_leadership',
             'PNI_reunify', 'PNI_paramilitary',
             //Paras_party
