@@ -1,8 +1,7 @@
 title: International Relations
 new-page: true
-view-if: PNI_International-R_timer <= 0 and player_party= "PNI"
-on-arrival: PNI_International-R_timer += 1; week_actions += 1
-frequency: 100
+view-if: PNI_International_Relations_timer <= 0
+on-arrival: PNI_International_Relations_timer += 4; week_actions += 1
 is-card: true
 card-image: img/ blank
 tags: PNI_party
@@ -16,7 +15,7 @@ WIP...
 
 @welp
 title: So... welp.
-on-arrival: m_sr_relation += ipr_change*(1-m_dissent); m_resources -= 1;
+on-arrival: PNI_resources -= 1;
 subtitle: Don't worry, it's being worked on!
 
 Anyway..
