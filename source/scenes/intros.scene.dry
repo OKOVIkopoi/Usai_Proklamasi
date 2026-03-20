@@ -27,19 +27,19 @@ view-if: abdi_seen < n_players
 go-to: intro_menu
 on-arrival: abdi_seen += 1
 
-= I just want to A-
+= Leftover from the Japanese smth
 
-The W I P.
+The Empire of Japan maybe has stopped continue the War yet this is as far as we know are a truce, with the chances of eventual peace treaty will be done by next month. Its armed force and civilians are still here, some are following the truce while others are uncertain.
 
-Nowwip.
+May they not do something sus.
 
 @omg_dutch
 title: The Dutch is Coming
-view-if: och_seen < n_players
+view-if: NICAISCOMING_seen < n_players
 go-to: intro_menu
-on-arrival: och_seen += 1
+on-arrival: NICAISCOMING_seen += 1
 
-= The What now?!?
+= The Dutch!?!?!!!1
 
 ughh.
 
