@@ -1,0 +1,14 @@
+title: The 1st Cabinet of Indonesia
+subtitle: A cabinet has been formed after talks around..
+new-page: true
+view-if: year = 1945 and month = 9 and week = 1
+on-arrival: PNI_resources += 0
+max-visits: 1
+face-image: Kabinet_Presidensial-Pertama.jpg
+tags: event
+
+= Kabinet Presidensial
+
+Finally, the first ever Government's cabinet is formed after talk upon talk.
+
+mmmmmm.
