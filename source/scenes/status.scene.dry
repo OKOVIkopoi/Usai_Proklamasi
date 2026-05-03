@@ -177,7 +177,7 @@ title: Government
 
 President: [+ now_president +] ([+ president_party +])
 
-It's all WIP, the wIp Cabinet.
+[? if year = 1945 and month >= 7 and week = 4 : Ministry of Foreign Affairs: Achmad Soebardjo : Nothingministriesburger ?]
 
 # Unfinish... should finish then.
 
