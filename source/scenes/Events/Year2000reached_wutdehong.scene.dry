@@ -1,7 +1,7 @@
 title: [+ year +], Happy New Year
 subtitle: You've reached so far..
 new-page: true
-view-if: ((year = 2000 and not year >= 2001) or year <= 1999)
+view-if: ((year = 2000 and not year >= 2001) or year >= 1999)
 on-arrival: PNI_resources += 3
 max-visits: 1
 face-image:
