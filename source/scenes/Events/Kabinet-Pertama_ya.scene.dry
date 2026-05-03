@@ -4,7 +4,7 @@ new-page: true
 view-if: year = 1945 and month = 9 and week = 1
 on-arrival: PNI_resources += 0
 max-visits: 1
-face-image: Kabinet_Presidensial-Pertama.jpg
+face-image: img/Kabinet_Presidensial-Pertama.jpg
 tags: event
 
 = Kabinet Presidensial
