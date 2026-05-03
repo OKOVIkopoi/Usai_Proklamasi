@@ -1,5 +1,16 @@
 
-(0..0) In transfer or um Anarchy
-(1..1) Presidential Republic
-(2..2) Parliamentary Republic
-(3..3) Emergency 'situation'
+(-2..-2) Bad thingy
+(-1..-1) In Transfer
+(0..0) Absentio
+(1..1) Aristocracy
+(2..2) Barbarocracy
+(3..3) Caliphate
+(4..4) Colonial East Indies
+(4.01..4.01) Colonial Indonesia
+(4.02..4.02) Colonial Indian Archipelago
+(4.04..4.04) Colonial Indian Islands
+(4.05..4.05) Colonial Insulindia
+(4.06..4.06) Colonial Malayan Archipelago
+(4.07..4.07) Colonial Malayan Islands
+(4.08..4.08) Colonial Nusantara
+(5..5) Democratic1
