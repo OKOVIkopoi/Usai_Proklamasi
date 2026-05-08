@@ -177,7 +177,7 @@ title: Government
 
 President: [+ now_president +] ([+ president_party +])
 
-[? if year >= 1945 and month >= 8 and week >= 4 : Ministry of Foreign Affairs: Achmad Soebardjo ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Foreign Affairs: [+ Foreign_Affairs_Minister +] ?]
 
 # Unfinish... should finish then.
 
