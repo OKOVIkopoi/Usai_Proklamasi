@@ -177,7 +177,7 @@ title: Government
 
 President: [+ now_president +] ([+ president_party +])
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Foreign Affairs: [+ Foreign_Affairs_Minister +] ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Foreign Affairs: [+ Foreign_Affairs_Minister : Foreign_Affairs_Minister +] ?]
 
 # Unfinish... should finish then.
 
