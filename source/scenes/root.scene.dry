@@ -229,9 +229,8 @@ Q.PKI_suss_relation = 50;
 
 // government
 // The form of government: PerangKemerdekaan Gov, Parl Gov, Emg gov, Dictatorship, moreee
-// 0 = Undergo or um Anarchy, 1 = Presidential Government, 2 = Parliamentary Government, 3 = Emergency Government, 4 = WIP honestly, 5 = In-Exile Government
+// 0 = Undergo or um Anarchy, 1 = Presidential Government,
 Q.government_form = 0;
-
 
 // Current government budget
 // each budget unit is ~= 1% of national income or about WIP
@@ -386,9 +385,13 @@ Q.democrats_in_gov = 0;
 // are we currently in an all-socialist coalition?
 Q.in_all_socialist_coalition = 0;
 
-Q.now_president = "supposedly Sukarno";
-Q.president_party = "Independent/PNI";
-Q.agriculture_minister = "WIP and so down this";
+Q.now_president = 0;
+Q.president_party = 0;
+Q.Agriculture_Minister = "WIP and so down this";
+Q.Foreign_Affairs_Ministry = 0;
+Q.Foreign_Affairs_Minister = 0;
+Q.Foreign_Affairs_Minister_party = 0;
+
 // at the start, WIP are the same, but there will be a separate WIP WIP.
 
 // government efficacy - affects efficacy of actions. 
