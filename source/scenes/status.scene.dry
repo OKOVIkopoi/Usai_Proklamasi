@@ -178,23 +178,23 @@ title: Government
 President: [+ now_president +] ([+ president_party +])
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Home Affairs:  () ?]
-# Ima test smth
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Foreign Affairs: [+ Foreign_Affairs_Minister : Foreign_Affairs_Minister +] () ?]
-# b
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Justice:  () ?]
-# c
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Education:  () ?]
-# d
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Health:  () ?]
-# e
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Information:  () ?]
-# f
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Prosperity:  () ?]
-# h
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Finance:  () ?]
-# i
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Social Affairs:  () ?]
-# j
+
 [? if PPKISession123_is_seen_by = 1 : Ministry of Defense:  () ?]
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Transportation:  () ?]
@@ -203,7 +203,7 @@ President: [+ now_president +] ([+ president_party +])
 
 [? if PPKISession123_is_seen_by = 1 : State Minister:  ?]
 
-[? if Foreign_Affairs_Minister == "Achmad Soebardjo" : Bila This appears, then the experiment or test has finished. ?]
+[? if Foreign_Affairs_Minister == "Achmad_Soebardjo" : Bila This appears, then the experiment or test has finished. ?]
 
 Government efficacy:
 
