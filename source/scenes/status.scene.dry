@@ -177,7 +177,19 @@ title: Government
 
 President: [+ now_president +] ([+ president_party +])
 
+[? if PPKISession123_is_seen_by = 1 : Ministry of Home Affairs:  ?]
 [? if PPKISession123_is_seen_by = 1 : Ministry of Foreign Affairs: [+ Foreign_Affairs_Minister : Foreign_Affairs_Minister +] ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Justice:  ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Education:  ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Health:  ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Information:  ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Prosperity:  ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Finance:  ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Social Affairs:  ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Defense:  ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Transportation:  ?]
+[ Ministry of Public Works:  ]
+[? if PPKISession123_is_seen_by = 1 : State Minister:  ?]
 
 # Unfinish... should finish then.
 
