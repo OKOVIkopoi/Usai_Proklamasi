@@ -387,10 +387,12 @@ Q.in_all_socialist_coalition = 0;
 
 Q.now_president = 0;
 Q.president_party = 0;
-Q.Agriculture_Minister = "WIP and so down this";
+Q.Home_Affairs_Ministry = 0;
+Q.Home_Affairs_Minister = 0;
+Q.Home_Affairs_Minister_s_party = 0;
 Q.Foreign_Affairs_Ministry = 0;
 Q.Foreign_Affairs_Minister = 0;
-Q.Foreign_Affairs_Minister_party = 0;
+Q.Foreign_Affairs_Minister_s_party = 0;
 
 // at the start, WIP are the same, but there will be a separate WIP WIP.
 
