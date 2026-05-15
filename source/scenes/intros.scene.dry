@@ -6,9 +6,9 @@ audio: shuffle music/Hari_Merdeka.wav
 
 = The Revolution of August 1945
 
-On Friday, 17 August, 1945, there is happened a proclamation. The proclamation which stated Indonesia's independent and that matters concerning the 'transfer of power' and 'other' matters will be executed in an 'orderly' manner and in the 'shortest' possible time.
+On Friday, 17 August, Year 1945, there is happened a proclamation. The proclamation which stated Indonesia's independent and that matters concerning the 'transfer of power' and 'other' matters will be executed in an 'orderly' manner and in the 'shortest' possible time.
 
-Anyway the news of it spreads quick and broad yet most of the people don't believe it nor the International community, thus the road towards actual liberation and recognition is still long.
+Anyway the news of it spreads quick and abroad yet most of the people don't believe it nor the International community, thus the road towards actual liberation and recognition is still long.
 
 It seems that for now, anything is possible. The Japanese force has been *diminished*. A new order is ready to be built.
 
@@ -45,7 +45,6 @@ ughh.
 
 WIP WIP WIP.
 
-
 @order_number_1
 title: First Do
 view-if: o1_seen < n_players
@@ -70,7 +69,7 @@ Let's begin.
 - @o1_committees: WIP.
 - @o1_address: also WIP.
 - @o1_rights: WIP too.
-- @o1_issue: This should be enough; issue the do!
+- @o1_issue: This should be enough; issue the work!
 
 
 @o1_committees
@@ -98,7 +97,7 @@ We wi WIP.
 view-if: o1_points > 0
 max-visits: 1
 go-to: intro_menu
-on-arrival: army_discipline -= 0.15 if o1_points = 3; army_discipline -= 0.1 if o1_points < 3; army_morale += 0.05 if o1_points = 3; army_morale += 0.3 if o1_points < 3; soldiers_pro_prov_gov += 10*o1_points; soldiers_pro_soviet += 10*o1_points; aparty_ap2_relation -= 2*o1_points; aparty_ap3_relation -= 2*o1_points;
+on-arrival: army_discipline -= 0.15 if o1_points = 3; army_morale += 0.05 if o1_points = 3; soldiers_pro_prov_gov += 10*o1_points;
 
 In addition to thes- WIP.
 
@@ -135,9 +134,7 @@ WIP just. WIP.
 @pg_new_gov
 go-to: dual_gov
 
-See only this? That means you're indeed a natuonalist OR patriot, PNI but if not then the code--fix mode.
-
-[? if player_party = "PPKI":The new uh WIP, okay yeah I just testing things out. Verified Catholic. ?][? if player_party = "Masyumi": Just testing, the differentiation. Verified Muslim. ?][? if party_name = "Paras": Test 12345. Does this work? ?][? if party_name = "PKI": The said government is literally filled with former fascists associates. Verified communist.  ?]
+Blo blo blop, WIPP.
 
 @dual_gov
 go-to: intro_menu
@@ -147,8 +144,6 @@ go-to: intro_menu
 title: What now?
 go-to: 1945_main
 view-if: o1_seen = 1
-#view-if: o1_seen = 1 and pg_seen= 1 and abdi_seen = 1 and pg_seen = 1
-
 
 @1945_main
 new-page: true
