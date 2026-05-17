@@ -35,7 +35,7 @@ Q.month_actions = 0;
 // -1 is easy btw, 0 = normal difficulty, 1 = hard mode, 2 = hard mode no saves
 Q.difficulty = 0;
 Q.historical_mode = 0;
-Q.player_party_name = "Zero";
+Q.player_party_name = "Zeros";
 Q.player_party = "Zero";
 Q.party_name_map = {"Masyumi": "Majelis Syuro Muslimin Indonesia",
         "[+ Catholic_Player_naming +]": "This might be some coding if and else alike",
@@ -48,6 +48,9 @@ Q.Catholic_Player_is_player = 0;
 Q.PNI_is_player = 0;
 Q.Paras_is_player = 0;
 Q.PKI_is_player = 0;
+//Is Player a spectator?
+Q.Player_is_Spectator = 0
+Q.Player_is_not_a_Spectator = 0
 
 Q.player_in_gov = 0;
 Q.player_in_KNIP = 0;
@@ -835,24 +838,12 @@ Select a party:
 - @PNI
 - @Paras
 - @PKI
+- @Spectator_if
 
 @local_multiplayer
 title: Local Multiplayer
 choose-if: 1 == 0
 unavailable-subtitle: Not yet implemented
-
-@PKI
-title: Indonesian Communist Party (PKI)
-
-**PKI** - one of the oldest parties in Indonesia, its future is as obstructed as its past.
-
-- @PKI_2: Yes, I am a communist!
-- @party_selection: No, select a different party.
-
-@PKI_2
-on-arrival: player_party_name = "Partai Komunis Indonesia"; player_party = "PKI"; PKI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
-go-to: intros
-
 
 @Masyumi
 title: Council of Indonesian Muslim Associations (Masyumi)
@@ -863,7 +854,7 @@ title: Council of Indonesian Muslim Associations (Masyumi)
 - @party_selection: No, select a different party.
 
 @Masyumi_2
-on-arrival: player_party_name = "Majelis Syuro Muslimin Indonesia"; player_party = "Masyumi"; Masyumi_is_player = 1; Masyumi_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
+on-arrival: Player_is_not_a_Spectator = 1; player_party_name = "Majelis Syuro Muslimin Indonesia"; player_party = "Masyumi"; Masyumi_is_player = 1; Masyumi_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
 go-to: intros
 
 
@@ -876,7 +867,7 @@ title: Indonesian Catholic Political Union (PPKI)
 - @party_selection: No, select a different party.
 
 @PPKI_2
-on-arrival: player_party_name = "Persatuan Politik Katolik Indonesia"; player_party = "PPKI"; Catholic_Player_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
+on-arrival: Player_is_not_a_Spectator = 1; player_party_name = "Persatuan Politik Katolik Indonesia"; player_party = "PPKI"; Catholic_Player_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
 go-to: intros
 
 
@@ -889,7 +880,7 @@ title: Indonesian National Party (PNI)
 - @party_selection: No, select a different party.
 
 @PNI_2
-on-arrival: player_party_name = "Partai Nasional Indonesia"; player_party = "PNI"; PNI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_gov = 1; player_in_exco = 0;
+on-arrival: Player_is_not_a_Spectator = 1; player_party_name = "Partai Nasional Indonesia"; player_party = "PNI"; PNI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_gov = 1; player_in_exco = 0;
 go-to: intros
 
 @Paras
@@ -901,5 +892,32 @@ title: Socialist People's Party (Paras)
 - @party_selection: No, select a different party.
 
 @Paras_2
-on-arrival: player_party = "Paras"; player_party_name = "Partai Rakyat Sosialis"; Paras_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
+on-arrival: Player_is_not_a_Spectator = 1; player_party = "Paras"; player_party_name = "Partai Rakyat Sosialis"; Paras_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
 go-to: intros
+
+@PKI
+title: Indonesian Communist Party (PKI)
+
+**PKI** - It's one of the oldest parties in Indonesia, its future is as obstructed as its past.
+
+- @PKI_2: Yes, I am a communist!
+- @party_selection: No, select a different party.
+
+@PKI_2
+on-arrival: Player_is_not_a_Spectator = 1; player_party_name = "Partai Komunis Indonesia"; player_party = "PKI"; PKI_is_player = 1; Masyumi_is_player = 0; player_in_KNIP = 0; player_in_exco = 0; player_in_gov = 0;
+go-to: intros
+
+@Spectator_if
+title: Spectate instead
+subtitle: How about spectating?
+unavailable-subtitle: This is not supposed to be shown yet
+
+**Spectator** also known as Drew Durnil mode - duh.
+
+- @Spectator_if_True: Have a nice learning or witnessing back Indonesian modern history.
+- @party_selection: Nevermind, let's get back.
+
+@Spectator_if_True
+on-arrival: Player_is_Spectator = 1; year += 0;
+go-to: intros
+
