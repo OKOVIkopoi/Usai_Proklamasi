@@ -84,7 +84,7 @@ Unemployment: [+ unemployed +]%
 
 Labor unrest: [+ labor_unrest : war_weariness +]
 
-Debugging: [+ difficulty +]
+Debugging: [+ difficulty +], [+ Player_is_not_a_Spectator +], and [+ Player_is_Spectator +]
 
 
 
