@@ -21,6 +21,7 @@ max-cards: 4
 - @party_PNI
 - @party_Paras
 - @party_PKI
+- @youarewitnessing_Spectate
 - @PerangKemerdekaan_gov
 - @KNIP_affairs
 - #advisor
@@ -48,6 +49,7 @@ max-cards: 5
 - @party_PNI
 - @party_Paras
 - @party_PKI
+- @youarewitnessing_Spectate
 - @PerangKemerdekaan_gov
 - @KNIP_affairs
 - #advisor
@@ -75,6 +77,7 @@ max-cards: 3
 - @party_PNI
 - @party_Paras
 - @party_PKI
+- @youarewitnessing_Spectate
 - @PerangKemerdekaan_gov
 - @KNIP_affairs
 - #advisor
@@ -119,6 +122,14 @@ is-deck: true
 view-if: player_party = "PKI"
 
 - #PKI_party
+
+@youarewitnessing_Spectate
+title: Spectate Modee
+card-image: img/ blank
+is-deck: true
+view-if: Player_is_Spectator = 1
+
+Blop WIP
 
 @PerangKemerdekaan_gov
 title: Provisional Government
