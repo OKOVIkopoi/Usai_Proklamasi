@@ -129,7 +129,7 @@ card-image: img/ blank
 is-deck: true
 view-if: Player_is_Spectator = 1
 
-Blop WIP
+- #Saksi_Spectator
 
 @PerangKemerdekaan_gov
 title: Provisional Government

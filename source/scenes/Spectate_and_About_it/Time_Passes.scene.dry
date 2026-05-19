@@ -1,0 +1,14 @@
+title: Move Time Ahead
+new-page: true
+view-if: Player_is_not_a_Spectator = 0
+on-arrival: week_actions += 1
+is-card: true
+card-image: img/ blank
+tags: Saksi_Spectator
+
+= Do you want Time passes?
+
+BBLRBLRBLR, blrblr yapyap yeah mon.
+
+- @root: Yes, time goes forward!
+- @easy_discard: No.
