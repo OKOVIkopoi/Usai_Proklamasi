@@ -2,7 +2,7 @@ title: The 1st Cabinet of Indonesia
 subtitle: A cabinet has been formed after talks around..
 new-page: true
 view-if: year = 1945 and month = 9 and week = 1
-on-arrival: PNI_resources += 0; Foreign_Affairs_Minister = 1
+on-arrival: PNI_resources += 0; Foreign_Affairs_Minister = 1; government_form = 4.02
 max-visits: 1
 face-image: img/Kabinet_Presidensial-Pertama.jpg
 tags: event
