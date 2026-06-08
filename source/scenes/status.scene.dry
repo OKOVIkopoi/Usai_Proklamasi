@@ -187,7 +187,7 @@ President: [+ now_president +] ([+ president_party +])
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Health:  () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Information:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Lighterment:  () ?]
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Prosperity:  () ?]
 
