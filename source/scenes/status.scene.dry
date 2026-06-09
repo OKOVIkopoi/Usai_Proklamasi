@@ -84,9 +84,7 @@ Unemployment: [+ unemployed +]%
 
 Labor unrest: [+ labor_unrest : war_weariness +]
 
-Debugging: [+ difficulty +], [+ Player_is_not_a_Spectator +], and [+ Player_is_Spectator +]
-
-
+Debugging: [+ difficulty +], [+ Home_Affairs_Minister +], and [+ Foreign_Affairs_Minister +]
 
 
 @politics
@@ -177,9 +175,9 @@ title: Government
 
 President: [+ now_president +] ([+ president_party +])
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Home Affairs: [+ Home_Affairs_Minister +] ([+ Home_Affairs_Minister_s_party +]) ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Home Affairs: [+ Home_Affairs_Minister : List_of_Ministers +] ([+ Home_Affairs_Minister_s_party +]) ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Foreign Affairs: [+ Foreign_Affairs_Minister : Foreign_Affairs_Minister +] ([+ Foreign_Affairs_Minister_s_party : Foreign_Affairs_Minister_s_party +]) ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Foreign Affairs: [+ Foreign_Affairs_Minister : List_of_Ministers +] ([+ Foreign_Affairs_Minister_s_party : Foreign_Affairs_Minister_s_party +]) ?]
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Justice:  () ?]
 
