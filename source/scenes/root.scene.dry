@@ -388,8 +388,8 @@ Q.democrats_in_gov = 0;
 // are we currently in an all-socialist coalition?
 Q.in_all_socialist_coalition = 0;
 
-Q.now_president = 0;
-Q.president_party = 0;
+Q.I_President = 0;
+Q.President_s_party = 0;
 Q.Home_Affairs_Ministry = 0;
 Q.Home_Affairs_Minister = 0;
 Q.Home_Affairs_Minister_s_party = 0;

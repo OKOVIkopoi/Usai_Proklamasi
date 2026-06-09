@@ -43,7 +43,7 @@ WIP
 
 = [+ government_form : government_form +]
 
-President: [+ now_president +] ([+ president_party +])
+President: [+ I_President +] ([+ President_s_party +])
 
 Parties in government: [+ governing_parties +]
 
@@ -173,7 +173,7 @@ title: Government
 
 = [+ government_form : government_form +]
 
-President: [+ now_president +] ([+ president_party +])
+President: [+ I_President +] ([+ President_s_party +])
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Home Affairs: [+ Home_Affairs_Minister : List_of_Ministers +] ([+ Home_Affairs_Minister_s_party +]) ?]
 
