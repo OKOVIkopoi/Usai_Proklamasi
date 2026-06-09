@@ -43,7 +43,7 @@ WIP
 
 = [+ government_form : government_form +]
 
-President: [+ I_President +] ([+ President_s_party +])
+President: [+ I_President : I_President +] ([+ President_s_party +])
 
 Parties in government: [+ governing_parties +]
 
@@ -84,7 +84,7 @@ Unemployment: [+ unemployed +]%
 
 Labor unrest: [+ labor_unrest : war_weariness +]
 
-Debugging: [+ difficulty +], [+ Home_Affairs_Minister +], and [+ Foreign_Affairs_Minister +]
+Debugging: [+ difficulty +], [+ I_President +], and [+ Foreign_Affairs_Minister +]
 
 
 @politics
@@ -173,35 +173,35 @@ title: Government
 
 = [+ government_form : government_form +]
 
-President: [+ I_President +] ([+ President_s_party +])
+President: [+ I_President : I_President +] ([+ President_s_party +])
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Home Affairs: [+ Home_Affairs_Minister : List_of_Ministers +] ([+ Home_Affairs_Minister_s_party +]) ?]
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Foreign Affairs: [+ Foreign_Affairs_Minister : List_of_Ministers +] ([+ Foreign_Affairs_Minister_s_party : Foreign_Affairs_Minister_s_party +]) ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Justice:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Justice: [+ Justice_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Education:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Education: [+ Education_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Health:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Health: [+ Health_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Lighterment:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Lighterment: [+ Information_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Prosperity:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Prosperity: [+ Economy_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Finance:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Finance: [+ Finance_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Social Affairs:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Social Affairs: [+ Social_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Defense:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Defense: [+ Military_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Transportation:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Interconnectment: [+ Transport_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : Ministry of Public Works:  () ?]
+[? if PPKISession123_is_seen_by = 1 : Ministry of Public Works: [+ Public_Works_Minister : List_of_Ministers +] () ?]
 
 [? if PPKISession123_is_seen_by = 1 : State Minister:  ?]
 
-[? if Foreign_Affairs_Minister == "Achmad_Soebardjo" : Bila This appears, then the experiment or test has finished. ?]
+[? if Foreign_Affairs_Minister == "Achmad Soebardjo Djojoadisoerjo" : Bila This appears, then the experiment or test has finished. ?]
 
 Government efficacy:
 

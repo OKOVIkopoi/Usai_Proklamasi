@@ -396,6 +396,38 @@ Q.Home_Affairs_Minister_s_party = 0;
 Q.Foreign_Affairs_Ministry = 0;
 Q.Foreign_Affairs_Minister = 0;
 Q.Foreign_Affairs_Minister_s_party = 0;
+Q.Justice_Ministry = 0;
+Q.Justice_Minister = 0;
+Q.Justice_Minister_s_party = 0;
+Q.Education_Ministry = 0;
+Q.Education_Minister = 0;
+Q.Education_Minister_s_party =0;
+Q.Health_Ministry = 0;
+Q.Health_Minister = 0;
+Q.Health_Minister_s_party = 0;
+Q.Information_Ministry = 0;
+Q.Information_Minister = 0;
+Q.Information_Minister_s_party = 0;
+Q.Economy_Ministry = 0;
+Q.Economy_Minister = 0;
+Q.Economy_Minister_s_party = 0;
+Q.Finance_Ministry = 0;
+Q.Finance_Minister = 0;
+Q.Finance_Minister_s_party = 0;
+Q.Social_Ministry = 0;
+Q.Social_Minister = 0;
+Q.Social_Minister_s_party = 0;
+Q.Military_Ministry = 0;
+Q.Military_Minister = 0;
+Q.Military_Minister_s_party = 0;
+Q.Transport_Ministry = 0;
+Q.Transport_Minister = 0;
+Q.Transport_Minister_s_party = 0;
+// Omg, the public works Woytinsky reference
+Q.Public_Works_Ministry = 0;
+Q.Public_Works_Minister = 0;
+Q.Public_Works_Minister_s_party = 0;
+
 
 // at the start, WIP are the same, but there will be a separate WIP WIP.
 

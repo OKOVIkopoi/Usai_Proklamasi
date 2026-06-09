@@ -2,7 +2,7 @@ title: Meetings of PPKI
 subtitle: Building the foundation of this Country
 new-page: true
 view-if:  year = 1945 and month = 8 and week = 4
-on-arrival: PPKISession123_is_seen_by = 1; government_form = 5
+on-arrival: PPKISession123_is_seen_by = 1; I_President = 1 ; government_form = 5
 max-visits: 1
 face-image: blank
 tags: event
