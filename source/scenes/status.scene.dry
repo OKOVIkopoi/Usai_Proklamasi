@@ -201,8 +201,6 @@ President: [+ I_President : I_President +] ([+ President_s_party +])
 
 [? if PPKISession123_is_seen_by = 1 : State Minister:  ?]
 
-[? if Foreign_Affairs_Minister == "1.04" : Bila This appears, then the experiment or test has finished. I'm thinking a more complex one but that is for later I think 2. ?]
-
 Government efficacy:
 
 Government legitimacy: 
