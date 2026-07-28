@@ -15,9 +15,10 @@ blop. Ril blop.
 
 @PPKIconclusion
 title: And then..
-on-arrival: smthblrb = 1 if wkxmwks = 0; smthblrb2 = 1 if rtusaer = 1 and ( smthparty = "smth" and year = 1945); smthblrb3 if blablabla010 = 1;
+view-if: PPKISession123_is_seen_by = 1
+on-arrival: smthblrb = 1 if wkxmwks = 0; smthblrb2 = 1 if rtusaeri = 1 and year = 1945; smthblrb3 if blablabla010 = 1;
 face-image: blank
 
-Conclude, the result thereby.
+Conclude, the result thereby is.
 
 Establishment of the Government's Cabinet, blrblr.
