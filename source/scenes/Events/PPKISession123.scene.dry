@@ -16,7 +16,7 @@ blop. Ril blop.
 @PPKIconclusion
 title: And then..
 view-if: PPKISession123_is_seen_by = 1
-on-arrival: smthblrb = 1 if wkxmwks_activated; smthblrb2 = 1 if rtusaeri and year = 1945; smthblrb3 if blablabla010 and not twittttestgaming;
+on-arrival: smthblrb = 1 if wkxmwks_activated; smthblrb2 = 1 if rtusaeri and year = 1945; smthblrb3 = 8 if blablabla010 and not twittttestgaming;
 face-image: blank
 
 Conclude, the result thereby is.
