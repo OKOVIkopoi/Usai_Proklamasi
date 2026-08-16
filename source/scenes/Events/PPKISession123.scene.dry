@@ -16,9 +16,20 @@ blop. Ril blop.
 @PPKIconclusion
 title: And then..
 view-if: PPKISession123_is_seen_by = 1
-on-arrival: smthblrb = 1 if wkxmwks_activated; smthblrb2 = 1 if rtusaeri and year = 1945; smthblrb3 = 8 if blablabla010 and not twittttestgaming; smthblrb44 = 1 if Home_Affairs_Minister = 1.01
+on-arrival: PPKIconclusion_is_seen_by = 1; smthblrb = 1 if wkxmwks_activated; smthblrb2 = 1 if rtusaeri and year = 1945; smthblrb3 = 8 if blablabla010 and not twittttestgaming; smthblrb44 = 1 if Home_Affairs_Minister = 1.01
 face-image: blank
 
 Conclude, the result thereby is.
 
-Establishment of the Government's Cabinet, blrblr.
+- @PPKIconclusion_cabinet_forming
+
+@PPKIconclusion_cabinet_forming
+title: A Cabinet is formed
+view-if: PPKIconclusion_is_seen_by = 1
+face-image: blank
+
+= Presidential Cabinet
+
+They conclude that we need a cabinet, an empty one. it's waiting to be filled. There are people that are expected to join cabinet but uncertainty is still running through.
+
+Next..
