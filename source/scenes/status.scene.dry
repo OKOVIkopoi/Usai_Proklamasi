@@ -51,7 +51,8 @@ Budget: [+ budget +]
 
 # KNIP smth elections or other 'body' elections.
 
-= [? if PPKISession123_is_seen_by = 1: Central Indonesian National Committee
+[? if PPKISession123_is_seen_by = 1: 
+= Central Indonesian National Committee
 
 Chair: ..
 
