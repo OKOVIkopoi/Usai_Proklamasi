@@ -51,11 +51,12 @@ Budget: [+ budget +]
 
 # KNIP smth elections or other 'body' elections.
 
+[? if PPKISession123_is_seen_by = 1 :
 = Central Indonesian National Committee
 
-Chair: 
+Chair: ..
 
-Leadership: 
+Leadership: ..
 
 Overal composition:
 Masyumi: 
@@ -64,6 +65,7 @@ PKI:
 PNI: 
 PPKI:
 Others: 
+?]
 
 = Peace
 
@@ -84,7 +86,8 @@ Unemployment: [+ unemployed +]%
 
 Labor unrest: [+ labor_unrest : war_weariness +]
 
-Debugging: [+ difficulty +] and [+ Foreign_Affairs_Minister +]
+Debugging: [+ difficulty +]
+
 
 
 @politics
