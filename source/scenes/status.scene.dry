@@ -36,7 +36,7 @@ Party resources available:
 [? if player_party == "PNI": [+ PNI_resources +] ?]
 [? if player_party == "Paras": [+ Paras_resources +] ?]
 [? if player_party == "PPKI": [+ PPKI_resources +] ?]
-[? if player_party == "Zero": Boom ?]
+[? if player_party == "Zero": Duar ?]
 
 Internal dissent:
 WIP 
@@ -58,11 +58,7 @@ Chair: ..
 Leadership: ..
 
 Overal composition:
-Masyumi: 
-Paras: 
-PKI:
-PNI: 
-PPKI:
+..
 Others:
 
 = Peace
@@ -84,7 +80,7 @@ Unemployment: [+ unemployed +]%
 
 Labor unrest: [+ labor_unrest : war_weariness +]
 
-Debugging: [+ difficulty +]
+Debugging (For the dev): [+ difficulty +]
 
 
 
@@ -135,7 +131,7 @@ switch (Q.player_party) {
 }
 !}
 
-# TODO: inter-party relationships, so it's not finish huh.
+# TODO: inter-party relationships, so it's not finish huh. Comment for the source code Petrograd.
 
 = Inter-party Relationships
 
@@ -200,7 +196,7 @@ President: [+ I_President : I_President +] ([+ President_s_party +])
 
 [? if PPKISession123_is_seen_by = 1 : Ministry of Public Works: [+ Public_Works_Minister : List_of_Ministers +] () ?]
 
-[? if PPKISession123_is_seen_by = 1 : State Minister:  ?]
+[? if PPKISession123_is_seen_by = 1 : State Minister: WIP ?]
 
 Government efficacy:
 
@@ -215,11 +211,11 @@ WIP
 
 = Finances and Debt
 
-Budget balance: [+ budget +]
+Budget balance: [+ Budget +]
 
-Noteable domestic debt: [+ domestic_debt +]
+Noteable domestic debt: [+ Domestic_Debt +]
 
-Foreign debt: [+ foreign_debt +]
+Foreign debt: [+ Foreign_Debt +]
 
 @security
 title: Security
@@ -248,9 +244,5 @@ Morale: WIP
 Discipline: WIP
 
 Supply: Uhhh WIP
-
-= Foreign Relations
-
-Relations with the West: 
 
 WIP, WIP, WIP, W...
