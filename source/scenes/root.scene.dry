@@ -38,7 +38,7 @@ Q.historical_mode = 0;
 Q.player_party_name = "Zeros";
 Q.player_party = "Zero";
 Q.party_name_map = {"Masyumi": "Majelis Syuro Muslimin Indonesia",
-        "[+ Catholic_Player_naming +]": "This might be some coding if and else alike",
+        "PPKI": "Persatuan Politik Katolik Indonesia",
         "PNI": "Partai Nasional Indonesia",
         "Paras": "Partai Rakyat Sosialis",
         "PKI": "Partai Komunis Indonesia"};
@@ -143,7 +143,7 @@ Q.Masyumi_nationality_policy = 2;
 Q.Masyumi_workers_org = 1;
 Q.Masyumi_soldiers_org = 1;
 
-// PPKI or PKRI or PK internals - now unified under the 'Dynamic' naming
+// PPKI or PKRI or PK internals - now unified under the 'Dynamic' naming.
 Q.Catholic_Player_factions = ['social_patriot', 'defensist', 'internationalist'];
 // unity is WIP
 // leader- WIP
@@ -237,14 +237,14 @@ Q.government_form = 0;
 
 // Current government budget
 // each budget unit is ~= 1% of national income or about WIP
-Q.budget = 0;
+Q.Budget = 0;
 // debt as % of GDP - based on WIP
 // long-term domestic debt, it's nothing since this is a new country right? Well no but for now it is
-Q.domestic_debt = 0;
+Q.Domestic_Debt = 0;
 // foreign debt WIP
-Q.foreign_debt = 1;
+Q.Foreign_Debt = 1;
 // how much bonding capacity is left...
-Q.bonding_capacity = 4;
+Q.Bonding_Capacity = 4;
 
 // military are WIP
 
